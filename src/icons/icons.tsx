@@ -1211,14 +1211,19 @@ export const TriageP0Deceased = createIcon('TriageP0Deceased', (
 ));
 
 // 108. Biometrik Sidik Jari BPJS (Verifikasi Peserta SEP & Mobile JKN)
+// Bentuk ridge diadaptasi dari Lucide "fingerprint" (ISC).
 export const BpjsFingerprint = createIcon('BpjsFingerprint', (
   <>
-    <path d="M12 3a9 9 0 0 0-9 9c0 3 1.5 6 3.5 8" />
-    <path d="M20.5 12a8.5 8.5 0 0 0-4.5-7.5" />
-    <path d="M12 7a5 5 0 0 0-5 5c0 3 1.5 5 3 7" />
-    <path d="M17 12a5 5 0 0 0-1.5-3.5" />
-    <path d="M12 11v8" />
-    <path d="M15 16c.5 1 1 2.5 1 4" />
+    {/* Busur luar & ridge kiri */}
+    <path d="M2 12a10 10 0 0 1 18-6" />
+    <path d="M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2" />
+    {/* Ridge kanan */}
+    <path d="M21.8 16c.2-2 .131-5.354 0-6" />
+    <path d="M9 6.8a6 6 0 0 1 9 5.2v2" />
+    {/* Ridge tengah */}
+    <path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4" />
+    <path d="M14 13.12c0 2.38 0 6.38-1 8.88" />
+    <path d="M8.65 22c.21-.66.45-1.32.57-2" />
   </>
 ));
 
@@ -1286,12 +1291,11 @@ export const DentalOdontogramSurface = createIcon('DentalOdontogramSurface', (
 // 114. Resep CITO / Stat Order Farmasi (Instan Life-Saving IGD & ICU)
 export const RxStatCito = createIcon('RxStatCito', (
   <>
-    <path d="M4 3h10l5 5v13H4V3Z" />
-    <path d="M14 3v5h5" />
-    <path d="M7 8v6" />
-    <path d="M7 8h3a2 2 0 0 1 0 4H7" />
-    <path d="m9 12 2 2" />
-    <path d="m14 11-3 5h3l-1 5 4-6h-3l2-4Z" />
+    {/* Lembar Resep */}
+    <path d="M4 3h9l5 5v13H4V3Z" />
+    <path d="M13 3v5h5" />
+    {/* Kilat CITO */}
+    <path d="M11.92 7.4 7.32 12.92h3.22l-.46 3.68 4.6-5.52h-3.22l.46-3.68Z" />
   </>
 ));
 
