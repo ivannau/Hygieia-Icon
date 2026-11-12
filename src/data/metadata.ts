@@ -23,6 +23,7 @@ export const CATEGORIES: { id: IconCategory; label: string }[] = [
   { id: 'perawatan', label: 'Perawatan & Pasien' },
   { id: 'integrasi-nasional', label: 'SatuSehat & BPJS' },
   { id: 'telemedisin-identitas', label: 'Telemedisin & Identitas' },
+  { id: 'fhir-resources', label: 'FHIR Resource' },
 ];
 
 export const ICON_CATALOG: IconEntry[] = [
@@ -1130,5 +1131,53 @@ export const ICON_CATALOG: IconEntry[] = [
     category: 'rawat-inap',
     tags: ['nicu', 'inkubator', 'bayi-prematur', 'bblr', 'perinatologi', 'perawatan-intensif-bayi'],
     description: 'Inkubator penghangat ruang perawatan intensif neonatus NICU dengan kanopi porthole ganda.',
+  },
+  /* -------------------------------------------------------------------------- */
+  /* 12. FHIR RESOURCE OBJECTS                                                  */
+  /* -------------------------------------------------------------------------- */
+  {
+    id: 'fhir-patient',
+    name: 'FHIR Patient (Identitas Pasien)',
+    componentName: 'FhirPatient',
+    component: Icons.FhirPatient,
+    category: 'fhir-resources',
+    tags: ['fhir', 'patient', 'resource', 'ihs-number', 'identitas-pasien', 'interoperabilitas'],
+    description: 'Resource Patient FHIR R4 yang merepresentasikan satu identitas pasien beserta NIK, IHS Number, dan nomor rekam medis.',
+  },
+  {
+    id: 'fhir-practitioner',
+    name: 'FHIR Practitioner (Tenaga Kesehatan)',
+    componentName: 'FhirPractitioner',
+    component: Icons.FhirPractitioner,
+    category: 'fhir-resources',
+    tags: ['fhir', 'practitioner', 'resource', 'nakes', 'ihs-number', 'str-sip', 'interoperabilitas'],
+    description: 'Resource Practitioner FHIR R4 untuk satu individu tenaga kesehatan dengan STR, SIP, dan nomor IHS praktisi.',
+  },
+  {
+    id: 'fhir-encounter',
+    name: 'FHIR Encounter (Kunjungan Pasien)',
+    componentName: 'FhirEncounter',
+    component: Icons.FhirEncounter,
+    category: 'fhir-resources',
+    tags: ['fhir', 'encounter', 'resource', 'kunjungan', 'registrasi', 'rawat-jalan', 'interoperabilitas'],
+    description: 'Resource Encounter FHIR R4 yang menautkan satu kunjungan pasien ke fasyankes, dari registrasi hingga pulang.',
+  },
+  {
+    id: 'fhir-observation',
+    name: 'FHIR Observation (Hasil Ukur Klinis)',
+    componentName: 'FhirObservation',
+    component: Icons.FhirObservation,
+    category: 'fhir-resources',
+    tags: ['fhir', 'observation', 'resource', 'tanda-vital', 'hasil-lab', 'pengukuran', 'interoperabilitas'],
+    description: 'Resource Observation FHIR R4 untuk satu hasil pengukuran atau temuan klinis tunggal seperti tanda vital dan nilai laboratorium.',
+  },
+  {
+    id: 'fhir-condition',
+    name: 'FHIR Condition (Diagnosis Klinis)',
+    componentName: 'FhirCondition',
+    component: Icons.FhirCondition,
+    category: 'fhir-resources',
+    tags: ['fhir', 'condition', 'resource', 'diagnosis', 'icd-10', 'masalah-klinis', 'interoperabilitas'],
+    description: 'Resource Condition FHIR R4 untuk diagnosis atau masalah klinis aktif yang tercatat pada episode perawatan pasien.',
   },
 ];

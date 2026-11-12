@@ -1346,3 +1346,53 @@ export const BabyIncubator = createIcon('BabyIncubator', (
     <path d="M6 19h12" />
   </>
 ));
+
+/* -------------------------------------------------------------------------- */
+/* 12. FHIR RESOURCE OBJECTS — GLYPH PENUH TANPA BINGKAI                       */
+/* -------------------------------------------------------------------------- */
+
+// 119. FHIR Patient (Resource Identitas Pasien Tunggal)
+export const FhirPatient = createIcon('FhirPatient', (
+  <>
+    {/* Kepala & Bahu Pasien */}
+    <path d="M12 5.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
+    <path d="M4.8 19.8c.6-3.4 3.3-5.3 7.2-5.3s6.6 1.9 7.2 5.3" />
+  </>
+));
+
+// 120. FHIR Practitioner (Resource Tenaga Kesehatan Individu)
+export const FhirPractitioner = createIcon('FhirPractitioner', (
+  <>
+    {/* Kepala & Bahu Nakes */}
+    <path d="M12 5a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4Z" />
+    <path d="M6 19.6c.5-3 2.9-4.7 6-4.7s5.5 1.7 6 4.7" />
+    {/* Palang Medis di Dada */}
+    <path d="M10.4 14.4h3.2M12 12.8v3.2" />
+  </>
+));
+
+// 121. FHIR Encounter (Resource Kunjungan Pasien ke Fasyankes)
+export const FhirEncounter = createIcon('FhirEncounter', (
+  <>
+    {/* Dua Panah Berlawanan: Pertemuan Pasien & Nakes */}
+    <path d="M4 9.5h13.5m-3.5-3.5L17.5 9.5 14 13" />
+    <path d="M20 14.5H6.5m3.5 3.5L6.5 14.5 10 18" />
+  </>
+));
+
+// 122. FHIR Observation (Resource Satu Hasil Pengukuran / Temuan Klinis)
+export const FhirObservation = createIcon('FhirObservation', (
+  <>
+    {/* Kurva Nilai Hasil Ukur */}
+    <path d="M3.5 17.5 8 9.5l4.5 4.5 6.5-7.5" />
+  </>
+));
+
+// 123. FHIR Condition (Resource Diagnosis & Masalah Klinis Aktif)
+export const FhirCondition = createIcon('FhirCondition', (
+  <>
+    {/* Label Klasifikasi Diagnosis (ICD-10) */}
+    <path d="M4.5 5.5h6.5l7.5 7.5-7 7-7.5-7.5V5.5Z" />
+    <path d="M8 8a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8Z" />
+  </>
+));

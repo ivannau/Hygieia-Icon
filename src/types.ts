@@ -35,7 +35,8 @@ export type IconCategory =
   | 'rumah-sakit'
   | 'perawatan'
   | 'integrasi-nasional'
-  | 'telemedisin-identitas';
+  | 'telemedisin-identitas'
+  | 'fhir-resources';
 
 export interface IconMetadata {
   id: string;
