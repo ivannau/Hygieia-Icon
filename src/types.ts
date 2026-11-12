@@ -27,14 +27,15 @@ export interface IconProps extends SVGProps<SVGSVGElement> {
 
 export type IconCategory =
   | 'diagnostik'
-  | 'farmasi'
-  | 'anatomi'
   | 'gawat-darurat'
   | 'rawat-inap'
   | 'dokumentasi-cppt'
+  | 'farmasi'
+  | 'anatomi'
   | 'rumah-sakit'
   | 'perawatan'
-  | 'integrasi-nasional';
+  | 'integrasi-nasional'
+  | 'telemedisin-identitas';
 
 export interface IconMetadata {
   id: string;
