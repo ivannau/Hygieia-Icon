@@ -120,6 +120,28 @@ These exist in the catalog but the web app has no surface for them — they are 
 3. **Design governance.** `web/scripts/check-design-tokens.mjs`, `design:check`, and the custom `no-disallowed-icons` rule must pass. The rule currently only bans `Sparkles`; preferring clinical icons would need a new rule, not a rename.
 4. **Metadata is Indonesian.** Icon names/descriptions are not shipped to the app's i18n bundle; they only appear in tooling. No i18n work is needed unless icons are labelled in the UI.
 
+
+## I. Custom SVGs in the app (audit)
+
+There is **no in-house icon system** in the web app. A scan of every inline `<svg>` found twelve files, and only four draw a UI icon on the 24-unit grid:
+
+| File | What it draws | Verdict |
+| :--- | :--- | :--- |
+| `components/form/ItemDecorations.tsx` | Warning triangle, hand-written path with `strokeWidth={2}` | Duplicate of lucide `AlertTriangle` (the path is the older Feather/Lucide geometry). Replace with the import |
+| `components/Checkbox.tsx` | Check mark at `strokeWidth={4}` | Legitimate: part of the checkbox primitive |
+| `components/Button.tsx` | Loading spinner | Legitimate: part of the button primitive |
+| `components/Spinner.tsx` | Loading spinner | Legitimate |
+
+The remaining eight are data visualisation, not icons: `VitalSignsFlowsheet` (SVG time series), `PediatricGrowthChart`, `ShockIndexGauge`, `LabTrendSparklineTable`, `DeltaTrendPopover`, `Barcode` (generated bars), `ToothSurfaceSvg` (44×44 dental surface map), and a test stub.
+
+Absent entirely: an `icons/` folder, an SVG sprite, an icon font, `mask-image` icons, or any `.svg` asset in `src/` or `public/` (the public folder only holds `data/`). There are also no BPJS, SatuSehat or Kemenkes logo assets — the only logo in the product is the organisation letterhead, uploaded by the user as a FHIR Binary and rendered through `<img>`.
+
+Consequences:
+
+1. Nothing competes with this set for clinical semantics, so the eleven `Fhir*` glyphs and the clinical icons fill a real void.
+2. One cleanup worth doing: the hand-drawn triangle in `ItemDecorations.tsx` should import `AlertTriangle`, which 77 other sites already use.
+3. Unicode check marks and crosses (`✓`, `✕`) appear inside a handful of button labels. They are text, not icons, but they scale with the font — worth replacing with the checkbox/spinner treatment when those buttons are next touched.
+
 ## H. Suggested order
 
 1. **Navigation** (one file, 13 swaps) — highest visibility, lowest risk, easy to eyeball in one PR.
