@@ -1,48 +1,49 @@
 # ⚕️ Icon Hygieia
 
-> **Simpel, Bermakna, Dunia Kesehatan Sentris.**  
-> Iconography Design System komprehensif berbasis vektor presisi (grid 24×24px, monoline stroke) yang dirancang khusus untuk ekosistem **Hygieia — Indonesia-First, FHIR R4-Native Hospital Information System (HIS / EMR)** dan aplikasi kesehatan modern berbasis **React & TypeScript**.
+> **Simple, Meaningful, Healthcare-First.**  
+> A comprehensive precision-vector iconography design system (24×24px grid, monoline stroke) built for the **Hygieia ecosystem — Indonesia-first, FHIR R4-native Hospital Information System (HIS / EMR)** and modern health applications in **React & TypeScript**.
 
 ---
 
-## 🏛️ Filosofi & Konteks Desain
+## 🏛️ Philosophy & Design Context
 
-Icon Hygieia diciptakan untuk menjawab kebutuhan antarmuka rumah sakit nyata di Indonesia dan standar interoperabilitas medis internasional:
-- **Disambiguasi Alur Klinis**: Mengeliminasi simbol generik yang membingungkan dokter dan perawat (pisau bedah *Scalpel* menggantikan gunting kantor di Kamar Operasi, piring nutrisi klinis menggantikan topi koki di Instalasi Gizi, siluet bayi neonatal menggantikan checklist di Kamar Bersalin VK, kartu identitas rekam medis menggantikan Git merge di MPI).
-- **Standar Akreditasi KARS / STARKES & PMK 24/2022**: Menyediakan simbol otentik untuk **CPPT SOAP**, **SBAR Handover Keperawatan**, **Verifikasi DPJP 1x24 jam**, **Perintah Verbal TBAK**, **Resep Racikan / Puyer & Salinan Resep**, dan **Triase IGD (P1/P2/P3)**.
-- **Integrasi Nasional Kemenkes & BPJS**: Menyertakan indikator status sinkronisasi **Kemenkes SatuSehat** (terverifikasi / antrean outbox / gagal), **BPJS Kesehatan (SEP, Rujukan, PRB, INA-CBGs)**, dan pembayaran digital **QRIS**.
+Icon Hygieia answers the needs of real Indonesian hospital interfaces and international medical interoperability standards:
 
----
-
-## 📐 Standar Vektor & Geometric Tokens
-
-- **Grid Canvas**: 24 × 24 px (Strict Optical Bounding Box)
-- **Stroke Width**: `2px` (default, dapat diatur dinamis)
-- **Line Terminals**: `strokeLinecap="round"`, `strokeLinejoin="round"`
-- **Fill**: `none` (outline murni, bebas artefak sub-pixel)
-- **Color Inheritance**: `stroke="currentColor"` (mendukung Tailwind CSS `text-sky-600`, dark mode, dan CSS variables)
+- **Clinical disambiguation**: removes generic symbols that confuse doctors and nurses (a scalpel instead of office scissors in the operating room, a clinical nutrition plate instead of a chef's hat in nutrition services, a neonatal silhouette instead of a checklist in the delivery room, a medical-record card instead of a Git merge in MPI).
+- **Accreditation standards (KARS / STARKES & PMK 24/2022)**: authentic symbols for **CPPT SOAP**, **SBAR nursing handover**, **DPJP verification within 1×24 hours**, **TBAK verbal orders**, **compounded prescriptions (puyer) and prescription copies**, and **ED triage (P1/P2/P3)**.
+- **National integration (Kemenkes & BPJS)**: status indicators for **Kemenkes SatuSehat** sync (verified / queued outbox / failed), **BPJS Kesehatan** (SEP, referral, PRB, INA-CBGs), and **QRIS** digital payments.
 
 ---
 
-## 📦 Katalog 129 Ikon Kesehatan Terverifikasi (11 Rumpun Medis)
+## 📐 Vector Standards & Geometric Tokens
 
-| Kategori | Jumlah | Komponen Ikon & Kegunaan Klinis Terverifikasi |
+- **Canvas grid**: 24 × 24 px (strict optical bounding box)
+- **Stroke width**: `2px` (default, adjustable at runtime)
+- **Line terminals**: `strokeLinecap="round"`, `strokeLinejoin="round"`
+- **Fill**: `none` (pure outline, free of sub-pixel artifacts)
+- **Color inheritance**: `stroke="currentColor"` (works with Tailwind CSS `text-sky-600`, dark mode, and CSS variables)
+
+---
+
+## 📦 Catalog of 129 Verified Health Icons (11 Medical Clusters)
+
+| Category | Count | Icon Components & Verified Clinical Use |
 | :--- | :---: | :--- |
-| **1. Diagnostik & Alat** | 18 | `<ActivityPulse />` (EKG), `<Stethoscope />` (Stetoskop), `<Thermometer />` (Suhu), `<Sphygmomanometer />` (Tensimeter Manset), `<PulseOximeter />` (SpO2), `<Microscope />` (Mikroskop Lab), `<TestTube />` (Tabung Reaksi Meniskus), `<VacutainerTubes />` (Rak Tabung Flebotomi LIS), `<PetriDish />` (Kultur Bakteri), `<CentrifugeLab />` (Sentrifugasi Darah), `<RadiologyXRay />` (Rontgen Toraks), `<CtScanMri />` (CT-Scan/MRI), `<UltrasoundProbe />` (Probe USG Doppler), `<FetalHeartRate />` (DJJ Fetal Doppler), `<Partograph />` (Partograf & LCG Persalinan), `<EyeRefractionLens />` (Refraksi Visus Kacamata), `<EndoscopyScope />` (Endoskopi Saluran Cerna), `<EegCap />` (Elektroensefalografi EEG). |
-| **2. IGD & Triase** | 13 | `<TriageP1Resus />` (Triase Merah Resusitasi Cito!), `<TriageP2Urgent />` (Triase Kuning Urgent), `<TriageP3Nonurgent />` (Triase Hijau Stabil), `<TriageP0Deceased />` (Triase Hitam Deceased/DOA Bencana), `<DefibrillatorAed />` (AED Kejut Jantung), `<VentilatorRespirator />` (Ventilator Mekanik ICU), `<OxygenCylinder />` (Tabung Oksigen Medis), `<TraumaShears />` (Gunting Trauma Bedah), `<CervicalCollar />` (Penyangga Leher C-Collar), `<StretcherGurney />` (Brankar Pasien UGD), `<Ambulance />` (Ambulans IGD), `<FirstAidKit />` (Kotak P3K), `<RxStatCito />` (Resep CITO Instan Life-Saving). |
-| **3. Bangsal & Bed** | 6 | `<BedAvailable />` (Bed Bangsal Tersedia), `<BedOccupied />` (Bed Terisi Pasien), `<BedIsolation />` (Bed Isolasi Tekanan Negatif AIIR), `<BabyIncubator />` (Inkubator Neonatus NICU/BBLR), `<NurseCallBell />` (Bel Panggilan Perawat), `<UrineCatheterBag />` (Kantong Kateter Urin Terukur). |
-| **4. CPPT & Rekam Medis** | 10 | `<CpptSoap />` (Catatan SOAP 4 Kuadran), `<CpptSbar />` (SBAR Handover Keperawatan), `<VerifiedDpjp />` (Verifikasi DPJP 1x24h), `<VerbalOrderTbak />` (Perintah Verbal TBAK), `<VitalSignsMonitor />` (Monitor Multi-parameter Tanda Vital), `<PatientWristband />` (Gelang Barcode Pasien SKP 1), `<InformedConsent />` (Persetujuan Tindakan Medis), `<DischargeResume />` (Resume Medis Pulang), `<ClinicalCarePlan />` (Pohon Protokol Klinis), `<MpiIdentityMerge />` (Penyatuan Rekam Medis Duplikat). |
-| **5. Farmasi & Resep** | 19 | `<BowlOfHygieia />` (Mangkuk Hygieia & Ular Asklepios), `<PillCapsule />` (Kapsul), `<TabletPill />` (Tablet Terbelah), `<RxRacikanPuyer />` (Lumpang Alu & Kertas Puyer), `<RxSalinan />` (Salinan Resep Apograph), `<Prescription />` (Resep Resmi ℞), `<Syringe />` (Spuit Injeksi Luer-lock), `<IvDrip />` (Infus IV Drip Chamber), `<BloodBag />` (Kantong Darah Transfusi), `<MedicineBottle />` (Botol Sirup), `<InhalerAerosol />` (Inhaler Asma MDI), `<EyeDropsBottle />` (Tetes Mata/Telinga), `<BlisterPack />` (Strip Blister Tablet), `<OintmentTube />` (Tube Salep Topikal), `<RxNarkotikaCsa />` (Palang Merah Narkotika), `<SyringePump />` (Syringe Pump ICU), `<Chemotherapy />` (Infus Sitotoksik Kemoterapi), `<AllergyConfirmed />` (Alergi Terkonfirmasi), `<AllergyNka />` (Bebas Alergi NKA). |
-| **6. Anatomi & Spesialisasi** | 16 | `<HeartCare />` (Kardiologi QRS Simetris), `<CoronaryStent />` (Stent Koroner Cath Lab), `<Lungs />` (Pulmonologi Bilateral Alami), `<BrainNeurology />` (Neurologi Lobus & Sulkus), `<ReflexHammer />` (Palu Refleks Taylor), `<ToothDental />` (Gigi Molar Odontogram), `<DentalProbe />` (Sonde & Kaca Mulut), `<DentalOdontogram />` (Grid Odontogram FDI), `<DentalOdontogramSurface />` (Peta 5-Permukaan Gigi MODBL), `<EyeVision />` (Oftalmologi Visus), `<SnellenChart />` (Bagan Snellen Chart), `<Otoscope />` (Otoskop Telinga THT), `<BoneOrthopedics />` (Ortopedi Kondilus 45°), `<CrutchesMobility />` (Kruk Fisioterapi), `<WalkingCane />` (Tongkat Jalan Geriatri), `<DnaHelix />` (Heliks DNA Periodik). |
-| **7. Rumah Sakit & Bedah** | 11 | `<SurgeryScalpel />` (Pisau Bedah Scalpel Ruang OK), `<SurgicalLamp />` (Lampu Operasi Scialytic), `<AnesthesiaMachine />` (Mesin Anestesi Gas Bius), `<SurgicalSiteMarking />` (Penandaan Lokasi Operasi SKP 4), `<AutoclaveCssd />` (Bejana Sterilisasi Uap CSSD), `<BloodBankCrossmatch />` (Bank Darah RS BDRS), `<MortuaryGurney />` (Kamar Jenazah & Medikolegal), `<BiohazardSharps />` (Safety Box Limbah Jarum B3), `<ClinicalNutrition />` (Piring Diet Gizi Klinik), `<DeliveryRoomVk />` (Kamar Bersalin VK Bayi Neonatal), `<HospitalClinic />` (Gedung Faskes Bertingkat). |
-| **8. Perawatan & Pasien** | 11 | `<Hemodialysis />` (Dialyzer Cuci Darah), `<EnteralFeedingNgt />` (Sonde Lambung NGT Gizi), `<FallRiskAlert />` (Peringatan Pasien Risiko Jatuh SKP 6), `<Accessibility />` (Aksesibilitas Universal), `<Wheelchair />` (Kursi Roda Mobilitas Dinamis), `<BabyStroller />` (Kereta Bayi Sasis Kokoh), `<BandagePlaster />` (Plester Luka Kassa Steril), `<FaceMask />` (Masker Bedah Pleated), `<HandSanitizer />` (Botol Pompa Antiseptik), `<ShieldCross />` (Perisai Proteksi Sehat), `<OxygenMask />` (Sungkup Masker Oksigen Wajah). |
-| **9. SatuSehat & BPJS** | 10 | `<SatuSehatSynced />` (Lencana Terverifikasi SatuSehat Kemenkes), `<SatuSehatPending />` (Lencana Antrean Outbox), `<SatuSehatError />` (Lencana Peringatan Validasi), `<BpjsFingerprint />` (Validasi Sidik Jari Biometrik SEP), `<BpjsSep />` (Surat Eligibilitas Peserta SEP), `<BpjsRujukan />` (Surat Rujukan FKTP/FKRTL), `<BpjsPrb />` (Program Rujuk Balik Kronis), `<BpjsInacbg />` (INA-CBGs Case-Mix Grouper), `<QrisPayment />` (Pembayaran Digital QRIS), `<CashierDrawer />` (Laci Kasir Keuangan RS). |
-| **10. Telemedisin & Identitas** | 4 | `<Teleconsultation />` (Video Call Dokter Telekonsultasi), `<DigitalKtp />` (e-KTP Elektronik NIK Dukcapil), `<SecBreakGlass />` (Akses Darurat Break-Glass), `<VipRestricted />` (Rekam Medis VIP / Konfidensial). |
-| **11. FHIR Resource** | 11 | `<FhirPatient />` (Resource identitas pasien), `<FhirPractitioner />` (Resource tenaga kesehatan), `<FhirEncounter />` (Resource kunjungan), `<FhirObservation />` (Resource hasil ukur klinis), `<FhirCondition />` (Resource diagnosis), `<FhirOrganization />` (Entitas faskes), `<FhirLocation />` (Lokasi & ruangan), `<FhirServiceRequest />` (Permintaan layanan), `<FhirCoverage />` (Jaminan biaya), `<FhirAppointment />` (Jadwal temu), `<FhirDiagnosticReport />` (Laporan penunjang). |
+| **1. Diagnostics & Instruments** | 18 | `<ActivityPulse />` (ECG rhythm), `<Stethoscope />` (auscultation), `<Thermometer />` (temperature), `<Sphygmomanometer />` (arm-cuff BP monitor), `<PulseOximeter />` (SpO2), `<Microscope />` (lab microscope), `<TestTube />` (specimen tube, 45° meniscus), `<VacutainerTubes />` (LIS phlebotomy rack), `<PetriDish />` (bacterial culture), `<CentrifugeLab />` (blood centrifugation), `<RadiologyXRay />` (chest X-ray), `<CtScanMri />` (CT/MRI scanner), `<UltrasoundProbe />` (Doppler probe), `<FetalHeartRate />` (fetal heart rate, Doppler), `<Partograph />` (partograph & labour LCG), `<EyeRefractionLens />` (refraction lens), `<EndoscopyScope />` (GI endoscope), `<EegCap />` (EEG cap). |
+| **2. Emergency & Triage** | 13 | `<TriageP1Resus />` (red triage, resuscitation, cito), `<TriageP2Urgent />` (yellow triage, urgent), `<TriageP3Nonurgent />` (green triage, stable), `<TriageP0Deceased />` (black triage, deceased/DOA), `<DefibrillatorAed />` (AED), `<VentilatorRespirator />` (ICU ventilator), `<OxygenCylinder />` (medical oxygen cylinder), `<TraumaShears />` (trauma shears), `<CervicalCollar />` (C-collar), `<StretcherGurney />` (ED stretcher), `<Ambulance />` (ED ambulance), `<FirstAidKit />` (first-aid kit), `<RxStatCito />` (CITO / stat prescription). |
+| **3. Wards & Beds** | 6 | `<BedAvailable />` (bed available), `<BedOccupied />` (bed occupied), `<BedIsolation />` (negative-pressure isolation bed, AIIR), `<BabyIncubator />` (NICU incubator, low birth weight), `<NurseCallBell />` (nurse call bell), `<UrineCatheterBag />` (graduated urine catheter bag). |
+| **4. CPPT & Medical Records** | 10 | `<CpptSoap />` (four-quadrant SOAP note), `<CpptSbar />` (nursing SBAR handover), `<VerifiedDpjp />` (DPJP verification, 1×24h), `<VerbalOrderTbak />` (TBAK verbal order), `<VitalSignsMonitor />` (multi-parameter vitals monitor), `<PatientWristband />` (patient barcode wristband, SKP 1), `<InformedConsent />` (informed consent), `<DischargeResume />` (discharge summary), `<ClinicalCarePlan />` (clinical protocol tree), `<MpiIdentityMerge />` (duplicate record merge). |
+| **5. Pharmacy & Prescriptions** | 19 | `<BowlOfHygieia />` (Hygieia bowl and Asklepios serpent), `<PillCapsule />` (capsule), `<TabletPill />` (scored tablet), `<RxRacikanPuyer />` (mortar, pestle and puyer paper), `<RxSalinan />` (prescription copy, apograph), `<Prescription />` (official prescription, ℞), `<Syringe />` (luer-lock syringe), `<IvDrip />` (IV drip chamber), `<BloodBag />` (transfusion blood bag), `<MedicineBottle />` (syrup bottle), `<InhalerAerosol />` (MDI asthma inhaler), `<EyeDropsBottle />` (eye/ear drops), `<BlisterPack />` (blister strip), `<OintmentTube />` (topical ointment tube), `<RxNarkotikaCsa />` (narcotics red cross), `<SyringePump />` (ICU syringe pump), `<Chemotherapy />` (cytotoxic infusion), `<AllergyConfirmed />` (confirmed allergy), `<AllergyNka />` (no known allergies, NKA). |
+| **6. Anatomy & Specialties** | 16 | `<HeartCare />` (symmetric QRS cardiology), `<CoronaryStent />` (cath-lab coronary stent), `<Lungs />` (bilateral pulmonology), `<BrainNeurology />` (lobes and sulci), `<ReflexHammer />` (Taylor reflex hammer), `<ToothDental />` (odontogram molar), `<DentalProbe />` (probe and mouth mirror), `<DentalOdontogram />` (FDI odontogram grid), `<DentalOdontogramSurface />` (MODBL five-surface map), `<EyeVision />` (visual acuity), `<SnellenChart />` (Snellen chart), `<Otoscope />` (ENT otoscope), `<BoneOrthopedics />` (45° condyle), `<CrutchesMobility />` (physiotherapy crutches), `<WalkingCane />` (geriatric walking cane), `<DnaHelix />` (periodic DNA helix). |
+| **7. Hospital & Surgery** | 11 | `<SurgeryScalpel />` (operating-room scalpel), `<SurgicalLamp />` (scialytic surgical lamp), `<AnesthesiaMachine />` (anaesthesia machine), `<SurgicalSiteMarking />` (surgical site marking, SKP 4), `<AutoclaveCssd />` (CSSD steam steriliser), `<BloodBankCrossmatch />` (hospital blood bank), `<MortuaryGurney />` (mortuary and medico-legal), `<BiohazardSharps />` (biohazard sharps container), `<ClinicalNutrition />` (clinical diet plate), `<DeliveryRoomVk />` (delivery room, neonatal), `<HospitalClinic />` (multi-storey facility building). |
+| **8. Care & Patients** | 11 | `<Hemodialysis />` (dialysis dialyser), `<EnteralFeedingNgt />` (NGT enteral feeding), `<FallRiskAlert />` (fall-risk alert, SKP 6), `<Accessibility />` (universal accessibility), `<Wheelchair />` (wheelchair, dynamic mobility), `<BabyStroller />` (baby stroller), `<BandagePlaster />` (sterile wound plaster), `<FaceMask />` (pleated surgical mask), `<HandSanitizer />` (antiseptic pump bottle), `<ShieldCross />` (health protection shield), `<OxygenMask />` (oxygen face mask). |
+| **9. SatuSehat & BPJS** | 10 | `<SatuSehatSynced />` (verified SatuSehat badge), `<SatuSehatPending />` (queued outbox badge), `<SatuSehatError />` (validation warning badge), `<BpjsFingerprint />` (SEP biometric fingerprint), `<BpjsSep />` (SEP eligibility letter), `<BpjsRujukan />` (FKTP/FKRTL referral letter), `<BpjsPrb />` (chronic PRB programme), `<BpjsInacbg />` (INA-CBGs case-mix grouper), `<QrisPayment />` (QRIS digital payment), `<CashierDrawer />` (hospital cashier drawer). |
+| **10. Telemedicine & Identity** | 4 | `<Teleconsultation />` (video-call consultation), `<DigitalKtp />` (e-KTP, Dukcapil NIK), `<SecBreakGlass />` (emergency break-glass access), `<VipRestricted />` (VIP / confidential record). |
+| **11. FHIR Resource** | 11 | `<FhirPatient />` (patient identity resource), `<FhirPractitioner />` (practitioner resource), `<FhirEncounter />` (encounter resource), `<FhirObservation />` (observation resource), `<FhirCondition />` (condition resource), `<FhirOrganization />` (facility organisation), `<FhirLocation />` (location and room), `<FhirServiceRequest />` (service request), `<FhirCoverage />` (coverage and payer), `<FhirAppointment />` (appointment slot), `<FhirDiagnosticReport />` (diagnostic report). |
 
 ---
 
-## 💻 Contoh Penggunaan di React TypeScript
+## 💻 Usage in React TypeScript
 
 ```tsx
 import React from 'react';
@@ -61,26 +62,26 @@ import {
 export const ClinicalDashboard: React.FC = () => {
   return (
     <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm text-slate-800">
-      {/* Simbol Resmi Farmasi Hygieia */}
+      {/* Canonical Hygieia pharmacy symbol */}
       <BowlOfHygieia size={28} className="text-teal-600" />
 
-      {/* Kamar Operasi / Bedah */}
+      {/* Operating room / surgery */}
       <SurgeryScalpel size={24} className="text-sky-600" />
 
-      {/* CPPT SOAP dengan Verifikasi DPJP 1x24 Jam */}
+      {/* CPPT SOAP with DPJP verification within 1×24h */}
       <CpptSoap size={24} />
       <VerifiedDpjp size={24} className="text-emerald-600" />
 
-      {/* Triase Gawat Darurat Cito! */}
+      {/* Cito emergency triage */}
       <TriageP1Resus size={24} className="text-rose-600 animate-pulse" />
 
-      {/* Sediaan Farmasi Indonesia */}
+      {/* Indonesian compounded preparation */}
       <RxRacikanPuyer size={24} className="text-amber-600" />
 
-      {/* Ketersediaan Bed Bangsal */}
+      {/* Ward bed availability */}
       <BedAvailable size={24} className="text-blue-600" />
 
-      {/* Status Sinkronisasi Nasional SatuSehat */}
+      {/* National SatuSehat sync status */}
       <SatuSehatSynced size={22} className="text-sky-500" />
     </div>
   );
@@ -89,10 +90,23 @@ export const ClinicalDashboard: React.FC = () => {
 
 ---
 
-## 🚀 Menjalankan Showcase Interaktif
+## 🚀 Running the Interactive Showcase
 
 ```bash
-cd ~/Projects/research/icon-hygieia
+pnpm install
 pnpm dev
 ```
-Buka `http://localhost:5173/` di browser untuk menguji seluruh 98 ikon dengan slider ukuran, ketebalan garis, palet warna medis, dan tombol salin JSX satu-klik.
+
+Open `http://localhost:5173/` to exercise all 129 icons with the size slider, stroke-width control, medical colour palette, and one-click JSX copy.
+
+---
+
+## 🧭 Agent Skill for Icon Contributions
+
+The repo ships a local skill at `.agents/skills/icon-hygieia/` so coding agents follow this set's rules when adding or revising an icon: 24×24 geometry, optical corrections, clinical disambiguation, naming, and catalog consistency. The FHIR resource family has its own doctrine in `references/fhir-resources.md` — including the eleven glyphs that exist and the resources deliberately left out.
+
+```bash
+node .agents/skills/icon-hygieia/scripts/check-catalog.mjs
+```
+
+The checker compares every component in `src/icons/icons.tsx` against its catalog entry: displayName versus export name, forbidden SVG features, duplicate ids, categories outside `IconCategory`, tag and description completeness, and whether the icon count in this README matches the catalog.
