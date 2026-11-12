@@ -1216,4 +1216,22 @@ export const ICON_CATALOG: IconEntry[] = [
     tags: ['fhir', 'coverage', 'resource', 'jaminan', 'asuransi', 'bpjs', 'interoperabilitas'],
     description: 'Resource Coverage FHIR R4 untuk polis jaminan biaya pasien, baik BPJS Kesehatan maupun asuransi komersial.',
   },
+  {
+    id: 'fhir-appointment',
+    name: 'FHIR Appointment (Jadwal Temu)',
+    componentName: 'FhirAppointment',
+    component: Icons.FhirAppointment,
+    category: 'fhir-resources',
+    tags: ['fhir', 'appointment', 'resource', 'jadwal', 'booking', 'rawat-jalan', 'interoperabilitas'],
+    description: 'Resource Appointment FHIR R4 untuk jadwal temu pasien dengan tenaga kesehatan atau unit layanan tertentu.',
+  },
+  {
+    id: 'fhir-diagnostic-report',
+    name: 'FHIR DiagnosticReport (Laporan Penunjang)',
+    componentName: 'FhirDiagnosticReport',
+    component: Icons.FhirDiagnosticReport,
+    category: 'fhir-resources',
+    tags: ['fhir', 'diagnostic-report', 'resource', 'hasil-lab', 'radiologi', 'penunjang', 'interoperabilitas'],
+    description: 'Resource DiagnosticReport FHIR R4 untuk laporan hasil pemeriksaan penunjang yang disahkan penanggung jawab.',
+  },
 ];

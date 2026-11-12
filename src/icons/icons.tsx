@@ -1442,3 +1442,26 @@ export const FhirCoverage = createIcon('FhirCoverage', (
     <path d="M12 12v6a2 2 0 0 0 4 0" />
   </>
 ));
+
+// 128. FHIR Appointment (Jadwal Temu Pasien & Nakes)
+export const FhirAppointment = createIcon('FhirAppointment', (
+  <>
+    {/* Kalender Janji Temu */}
+    <path d="M6 5h12a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z" />
+    <path d="M5 9h14" />
+    <path d="M9 3v4M15 3v4" />
+    {/* Penanda Hari Terjadwal */}
+    <path d="M12 12.5a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2Z" />
+  </>
+));
+
+// 129. FHIR DiagnosticReport (Laporan Hasil Pemeriksaan Penunjang)
+export const FhirDiagnosticReport = createIcon('FhirDiagnosticReport', (
+  <>
+    {/* Lembar Laporan */}
+    <path d="M5 3h9l5 5v13H5V3Z" />
+    <path d="M14 3v5h5" />
+    {/* Kurva Hasil Pemeriksaan di Dalam Laporan */}
+    <path d="M8 14.5 10.5 11l2 2.5L15 10" />
+  </>
+));
