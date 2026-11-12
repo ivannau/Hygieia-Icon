@@ -57,7 +57,14 @@ Every component in `src/icons/icons.tsx` needs a matching entry in `src/data/met
 | `references/geometry.md` | Before drawing: grid, curves, optical corrections, detail budget, shape-failure catalog |
 | `references/clinical-semantics.md` | Before choosing a metaphor: guess test, metaphor decisions, pairs at risk of collision, brand and color rules, naming |
 | `references/authoring.md` | When editing files: snippets, metadata schema, accessibility, verification commands, definition of done, commit conventions |
+| `references/fhir-resources.md` | Before adding or reviewing any `Fhir*` icon, or when a resource type seems to need one: family grammar, the eleven that exist, the ones deliberately not drawn |
 | `scripts/check-catalog.mjs` | After every change: export ↔ catalog consistency, forbidden SVG features, README count |
+
+## FHIR resource icons
+
+The `fhir-resources` category holds eleven `Fhir*` glyphs for the resources that appear in the UI. They follow the same canvas as every other icon — **no container, no frame**: an 18×18 rounded frame is already `CpptSoap`, and person-in-a-frame is already `Teleconsultation`.
+
+Before drawing a new one, read `references/fhir-resources.md`. It records what each glyph encodes, which resources were deliberately left out and why, and the checklist for adding a twelfth.
 
 ## When a concept does not fit at 24px monoline
 
