@@ -1167,14 +1167,13 @@ export const CoronaryStent = createIcon('CoronaryStent', (
   </>
 ));
 
-// 104. Detak Jantung Janin / DJJ Doppler (Auskultasi Fetal Doppler & CTG Partograf)
+// 104. Detak Jantung Janin / DJJ (Siluet Hati Janin & Garis Denyut EKG)
 export const FetalHeartRate = createIcon('FetalHeartRate', (
   <>
-    <path d="M4 18l4-4 2 2-4 4Z" />
-    <path d="M4 19c-2 2 0 4 2 2" />
-    <path d="M16 6.5C16 5 14.5 4 13.5 5c-1 1-1 2.5 0 3.5l2.5 2.5 2.5-2.5c1-1 1-2.5 0-3.5-1-1-2.5 0-2.5 1.5" />
-    <path d="M10 12c1.5-1.5 3-1 4 0" />
-    <path d="M12 9c2.5-2 5-1 6.5 1" />
+    {/* Hati Janin */}
+    <path d="M16.06 9.36C16.92 8.51 17.8 7.5 17.8 6.17A3.19 3.19 0 0 0 14.61 2.98C13.59 2.98 12.87 3.27 12 4.14C11.13 3.27 10.41 2.98 9.39 2.98A3.19 3.19 0 0 0 6.2 6.17C6.2 7.5 7.07 8.52 7.94 9.36L12 13.42Z" />
+    {/* Garis Denyut DJJ */}
+    <path d="M5.5 19.1h2.8l1.2-2.4 1.8 4.2 1.3-3.5 1 1.7h4.9" />
   </>
 ));
 
