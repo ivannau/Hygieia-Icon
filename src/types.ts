@@ -29,8 +29,12 @@ export type IconCategory =
   | 'diagnostik'
   | 'farmasi'
   | 'anatomi'
+  | 'gawat-darurat'
+  | 'rawat-inap'
+  | 'dokumentasi-cppt'
   | 'rumah-sakit'
-  | 'perawatan';
+  | 'perawatan'
+  | 'integrasi-nasional';
 
 export interface IconMetadata {
   id: string;
