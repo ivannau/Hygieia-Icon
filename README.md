@@ -24,7 +24,7 @@ Icon Hygieia diciptakan untuk menjawab kebutuhan antarmuka rumah sakit nyata di 
 
 ---
 
-## 📦 Katalog 123 Ikon Kesehatan Terverifikasi (11 Rumpun Medis)
+## 📦 Katalog 127 Ikon Kesehatan Terverifikasi (11 Rumpun Medis)
 
 | Kategori | Jumlah | Komponen Ikon & Kegunaan Klinis Terverifikasi |
 | :--- | :---: | :--- |
@@ -38,7 +38,7 @@ Icon Hygieia diciptakan untuk menjawab kebutuhan antarmuka rumah sakit nyata di 
 | **8. Perawatan & Pasien** | 11 | `<Hemodialysis />` (Dialyzer Cuci Darah), `<EnteralFeedingNgt />` (Sonde Lambung NGT Gizi), `<FallRiskAlert />` (Peringatan Pasien Risiko Jatuh SKP 6), `<Accessibility />` (Aksesibilitas Universal), `<Wheelchair />` (Kursi Roda Mobilitas Dinamis), `<BabyStroller />` (Kereta Bayi Sasis Kokoh), `<BandagePlaster />` (Plester Luka Kassa Steril), `<FaceMask />` (Masker Bedah Pleated), `<HandSanitizer />` (Botol Pompa Antiseptik), `<ShieldCross />` (Perisai Proteksi Sehat), `<OxygenMask />` (Sungkup Masker Oksigen Wajah). |
 | **9. SatuSehat & BPJS** | 10 | `<SatuSehatSynced />` (Lencana Terverifikasi SatuSehat Kemenkes), `<SatuSehatPending />` (Lencana Antrean Outbox), `<SatuSehatError />` (Lencana Peringatan Validasi), `<BpjsFingerprint />` (Validasi Sidik Jari Biometrik SEP), `<BpjsSep />` (Surat Eligibilitas Peserta SEP), `<BpjsRujukan />` (Surat Rujukan FKTP/FKRTL), `<BpjsPrb />` (Program Rujuk Balik Kronis), `<BpjsInacbg />` (INA-CBGs Case-Mix Grouper), `<QrisPayment />` (Pembayaran Digital QRIS), `<CashierDrawer />` (Laci Kasir Keuangan RS). |
 | **10. Telemedisin & Identitas** | 4 | `<Teleconsultation />` (Video Call Dokter Telekonsultasi), `<DigitalKtp />` (e-KTP Elektronik NIK Dukcapil), `<SecBreakGlass />` (Akses Darurat Break-Glass), `<VipRestricted />` (Rekam Medis VIP / Konfidensial). |
-| **11. FHIR Resource** | 5 | `<FhirPatient />` (Resource identitas pasien), `<FhirPractitioner />` (Resource tenaga kesehatan), `<FhirEncounter />` (Resource kunjungan), `<FhirObservation />` (Resource hasil ukur klinis), `<FhirCondition />` (Resource diagnosis). |
+| **11. FHIR Resource** | 9 | `<FhirPatient />` (Resource identitas pasien), `<FhirPractitioner />` (Resource tenaga kesehatan), `<FhirEncounter />` (Resource kunjungan), `<FhirObservation />` (Resource hasil ukur klinis), `<FhirCondition />` (Resource diagnosis), `<FhirOrganization />` (Entitas faskes), `<FhirLocation />` (Lokasi & ruangan), `<FhirServiceRequest />` (Permintaan layanan), `<FhirCoverage />` (Jaminan biaya). |
 
 ---
 

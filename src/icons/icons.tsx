@@ -1396,3 +1396,47 @@ export const FhirCondition = createIcon('FhirCondition', (
     <path d="M8 8a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8Z" />
   </>
 ));
+
+// 124. FHIR Organization (Entitas Faskes Berbadan Hukum)
+export const FhirOrganization = createIcon('FhirOrganization', (
+  <>
+    {/* Node Induk */}
+    <path d="M9.5 3h5a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" />
+    {/* Dua Unit di Bawahnya */}
+    <path d="M4.5 15h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1Z" />
+    <path d="M16.5 15h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1Z" />
+    {/* Penghubung Struktur */}
+    <path d="M12 9v2.5M6 11.5h12M6 11.5V15M18 11.5V15" />
+  </>
+));
+
+// 125. FHIR Location (Lokasi Fisik: Gedung, Ruangan & Bed)
+export const FhirLocation = createIcon('FhirLocation', (
+  <>
+    {/* Pin Lokasi */}
+    <path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z" />
+    <path d="M12 8a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z" />
+  </>
+));
+
+// 126. FHIR ServiceRequest (Permintaan Layanan / Order Penunjang)
+export const FhirServiceRequest = createIcon('FhirServiceRequest', (
+  <>
+    {/* Formulir Order */}
+    <path d="M3 3h8l4 4v14H3V3Z" />
+    <path d="M11 3v4h4" />
+    {/* Panah Disposisi */}
+    <path d="M14 12.5h6.5m-2.5-2.5 2.5 2.5-2.5 2.5" />
+  </>
+));
+
+// 127. FHIR Coverage (Jaminan Biaya: BPJS & Asuransi Komersial)
+export const FhirCoverage = createIcon('FhirCoverage', (
+  <>
+    {/* Kanopi Payung Jaminan */}
+    <path d="M12 3a9 9 0 0 1 9 9H3a9 9 0 0 1 9-9Z" />
+    <path d="M12 3V2" />
+    {/* Tangkai Payung */}
+    <path d="M12 12v6a2 2 0 0 0 4 0" />
+  </>
+));
