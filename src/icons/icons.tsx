@@ -346,6 +346,20 @@ export const UrineCatheterBag = createIcon('UrineCatheterBag', (
   </>
 ));
 
+// Admisi & Mutasi Rawat Inap ADT (Bed bangsal dengan panah masuk admisi pasien)
+export const InpatientAdmission = createIcon('InpatientAdmission', (
+  <>
+    {/* Rangka bed bangsal pasien */}
+    <path d="M2 7v14" />
+    <path d="M2 12h18a2 2 0 0 1 2 2v7" />
+    <path d="M2 18h20" />
+    <path d="M6 12v6" />
+    {/* Panah masuk penempatan admisi */}
+    <path d="M7 4h6a2 2 0 0 1 2 2v3" />
+    <path d="m12 6 3 3 3-3" />
+  </>
+));
+
 
 /* -------------------------------------------------------------------------- */
 /* 4. DOKUMENTASI KLINIS, CPPT & REKAM MEDIS                                  */
@@ -644,6 +658,20 @@ export const AllergyNka = createIcon('AllergyNka', (
   </>
 ));
 
+// Rekonsiliasi Obat Pasien (Kapsul terapi dan panah pembandingan dua arah daftar obat)
+export const MedicationReconciliation = createIcon('MedicationReconciliation', (
+  <>
+    {/* Kapsul obat pasien */}
+    <rect x="3" y="4" width="6" height="16" rx="3" />
+    <path d="M3 12h6" />
+    {/* Panah pembandingan dua arah daftar obat asal dan instruksi baru */}
+    <path d="M13 7h8" />
+    <path d="m18 4 3 3-3 3" />
+    <path d="M21 17h-8" />
+    <path d="m16 14-3 3 3 3" />
+  </>
+));
+
 
 /* -------------------------------------------------------------------------- */
 /* 6. ANATOMI & SPESIALISASI KLINIS                                           */
@@ -874,6 +902,35 @@ export const HospitalClinic = createIcon('HospitalClinic', (
   </>
 ));
 
+// Antrean Pasien & Loket Poli (Karcis antrean berlubang samping dengan sobekan nomor)
+export const PatientQueue = createIcon('PatientQueue', (
+  <>
+    {/* Badan karcis antrean */}
+    <path d="M4 6h16a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4V8a2 2 0 0 1 2-2Z" />
+    {/* Garis perforasi sobekan karcis */}
+    <path d="M15 6v2" />
+    <path d="M15 11v2" />
+    <path d="M15 16v2" />
+    {/* Nomor urut dan tujuan poli */}
+    <path d="M6.5 10h5.5" />
+    <path d="M6.5 14h4" />
+  </>
+));
+
+// Implan Bedah & Penelusuran UDI (Prostesis sendi panggul: mangkuk asetabulum, kepala bola, dan tangkai)
+export const SurgicalImplant = createIcon('SurgicalImplant', (
+  <>
+    {/* Mangkuk asetabulum implan */}
+    <path d="M7.9 4.9a6.5 6.5 0 0 1 9.2 9.2" />
+    {/* Kepala sendi prostetik */}
+    <circle cx="12.5" cy="9.5" r="3" />
+    {/* Tangkai dan leher prostesis */}
+    <path d="M10.4 11.6 6 16v5" />
+    {/* Flensa kerah fiksasi */}
+    <path d="m6.5 11.5 4 4" />
+  </>
+));
+
 
 /* -------------------------------------------------------------------------- */
 /* 8. PERAWATAN, PASIEN & MOBILITAS                                           */
@@ -1047,6 +1104,21 @@ export const CashierDrawer = createIcon('CashierDrawer', (
     <path d="M3 15h18" />
     <circle cx="12" cy="18" r="1" />
     <path d="M7 11V5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v6" />
+  </>
+));
+
+// Tagihan Medis & Rincian Biaya (Struk tagihan bergerigi dengan baris item dan nominal)
+export const HospitalInvoice = createIcon('HospitalInvoice', (
+  <>
+    {/* Lembar tagihan bergerigi */}
+    <path d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16l-4-3-4 3-4-3-4 3V5Z" />
+    {/* Tajuk tagihan */}
+    <path d="M8 7.5h8" />
+    {/* Baris rincian layanan dan nominal biaya */}
+    <path d="M8 11h3.5" />
+    <path d="M14 11h2" />
+    <path d="M8 14.5h3.5" />
+    <path d="M14 14.5h2" />
   </>
 ));
 

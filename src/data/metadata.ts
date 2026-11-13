@@ -299,6 +299,15 @@ export const ICON_CATALOG: IconEntry[] = [
     tags: ['kateter', 'urin', 'fluid-output', 'cairan', 'drainase', 'balance'],
     description: 'Kantong penampung urin kateter dengan skala mililiter untuk pemantauan balance cairan.',
   },
+  {
+    id: 'inpatient-admission',
+    name: 'Admisi & Mutasi Rawat Inap (ADT)',
+    componentName: 'InpatientAdmission',
+    component: Icons.InpatientAdmission,
+    category: 'rawat-inap',
+    tags: ['admisi', 'adt', 'mutasi', 'rawat-inap', 'masuk-bangsal', 'inpatient', 'admission'],
+    description: 'Proses penerimaan, penempatan kamar bangsal, dan mutasi pasien rawat inap (Admit-Discharge-Transfer).',
+  },
 
   /* -------------------------------------------------------------------------- */
   /* 4. DOKUMENTASI KLINIS, CPPT & REKAM MEDIS                                  */
@@ -559,6 +568,15 @@ export const ICON_CATALOG: IconEntry[] = [
     tags: ['nka', 'no-known-allergies', 'bebas-alergi', 'aman', 'skrining'],
     description: 'Status pasien terverifikasi tidak memiliki riwayat alergi obat maupun makanan (NKA).',
   },
+  {
+    id: 'medication-reconciliation',
+    name: 'Rekonsiliasi Obat Pasien',
+    componentName: 'MedicationReconciliation',
+    component: Icons.MedicationReconciliation,
+    category: 'farmasi',
+    tags: ['rekonsiliasi-obat', 'pkpo', 'farmasi-klinis', 'telaah-obat', 'kars', 'med-reconciliation'],
+    description: 'Pembandingan riwayat obat pasien sebelum masuk dengan instruksi terapi baru untuk mencegah duplikasi atau interaksi.',
+  },
 
   /* -------------------------------------------------------------------------- */
   /* 6. ANATOMI & SPESIALISASI KLINIS                                           */
@@ -747,6 +765,24 @@ export const ICON_CATALOG: IconEntry[] = [
     tags: ['rs', 'rumah-sakit', 'klinik', 'puskesmas', 'faskes', 'gedung'],
     description: 'Gedung fasilitas kesehatan bertingkat dengan pintu ambang dan palang medis.',
   },
+  {
+    id: 'patient-queue',
+    name: 'Antrean Pasien & Loket Poli',
+    componentName: 'PatientQueue',
+    component: Icons.PatientQueue,
+    category: 'rumah-sakit',
+    tags: ['antrean', 'antrian', 'poli', 'loket', 'mjkn', 'karcis', 'queue'],
+    description: 'Nomor urut dan manajemen antrean pasien di loket pendaftaran, poliklinik rawat jalan, maupun farmasi.',
+  },
+  {
+    id: 'surgical-implant',
+    name: 'Implan Bedah & Penelusuran UDI',
+    componentName: 'SurgicalImplant',
+    component: Icons.SurgicalImplant,
+    category: 'rumah-sakit',
+    tags: ['implan', 'implant', 'udi', 'prostesis', 'ortopedi', 'kamar-operasi', 'traceability'],
+    description: 'Pencatatan dan penelusuran perangkat implan bedah beserta nomor lot serta kompatibilitas MRI pasien.',
+  },
 
   /* -------------------------------------------------------------------------- */
   /* 8. PERAWATAN, PASIEN & MOBILITAS                                           */
@@ -907,6 +943,15 @@ export const ICON_CATALOG: IconEntry[] = [
     category: 'integrasi-nasional',
     tags: ['kasir', 'cashier', 'laci-kas', 'uang-tunai', 'keuangan', 'billing'],
     description: 'Laci kasir keuangan rumah sakit untuk penerimaan pembayaran tunai dan penutupan shift kas.',
+  },
+  {
+    id: 'hospital-invoice',
+    name: 'Tagihan Medis & Rincian Biaya',
+    componentName: 'HospitalInvoice',
+    component: Icons.HospitalInvoice,
+    category: 'integrasi-nasional',
+    tags: ['tagihan', 'billing', 'invoice', 'kwitansi', 'tarif', 'keuangan', 'biaya-perawatan'],
+    description: 'Rincian tagihan biaya layanan klinis, tindakan, obat, dan penjaminan pasien di unit billing rumah sakit.',
   },
 
   /* -------------------------------------------------------------------------- */
