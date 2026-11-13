@@ -165,6 +165,44 @@ export const UltrasoundProbe = createIcon('UltrasoundProbe', (
   </>
 ));
 
+// Glukometer POCT (Alat pengukur gula darah kapiler dengan tetes darah & strip uji)
+export const Glucometer = createIcon('Glucometer', (
+  <>
+    {/* Badan alat glukometer */}
+    <rect x="6" y="2" width="12" height="14" rx="3" />
+    {/* Tetes darah sampel kapiler */}
+    <path d="M12 4.5c0 1.8-3 3.5-3 5.5a3 3 0 0 0 6 0c0-2-3-3.7-3-5.5Z" />
+    {/* Strip uji di slot bawah */}
+    <path d="M10 16v5h4v-5" />
+  </>
+));
+
+// Spirometer Fungsi Paru (Alat uji spirometri dengan corong tiup dan kurva FEV1)
+export const Spirometer = createIcon('Spirometer', (
+  <>
+    {/* Badan meter spirometer */}
+    <rect x="8" y="4" width="13" height="16" rx="2.5" />
+    {/* Corong tiup mulut */}
+    <path d="M2 9.5h6" />
+    <path d="M2 14.5h6" />
+    <path d="M2 8.5v7" />
+    {/* Kurva puncak ekspirasi FEV1 */}
+    <path d="M11 15.5c.8-4.5 1.8-7 3-7 1.3 0 2 3.5 4 6" />
+  </>
+));
+
+// Timbangan Berat Badan Klinis (Platform timbangan antropometri dan jarum dial)
+export const WeightScale = createIcon('WeightScale', (
+  <>
+    {/* Platform pijakan timbangan */}
+    <rect x="3" y="3" width="18" height="18" rx="3" />
+    {/* Jendela skala penunjuk berat */}
+    <path d="M7 11a5 5 0 0 1 10 0Z" />
+    {/* Jarum penunjuk berat badan */}
+    <path d="m12 11 2-2.5" />
+  </>
+));
+
 
 /* -------------------------------------------------------------------------- */
 /* 2. GAWAT DARURAT, TRIASE & RESUSITASI                                      */
@@ -282,6 +320,37 @@ export const FirstAidKit = createIcon('FirstAidKit', (
   </>
 ));
 
+// Unit Suction Medis (Tabung kanister vakum dengan manometer dan selang penghisap)
+export const SuctionPump = createIcon('SuctionPump', (
+  <>
+    {/* Tabung penampung cairan vakum */}
+    <rect x="3" y="9" width="10" height="12" rx="2" />
+    {/* Tutup hermetik dan manometer tekanan */}
+    <path d="M2 9h12" />
+    <path d="M8 9V7" />
+    <circle cx="8" cy="4.5" r="2.5" />
+    {/* Skala volume kanister */}
+    <path d="M3 13h3" />
+    <path d="M3 17h4" />
+    {/* Selang penghisap lendir */}
+    <path d="M13 11.5h3a3 3 0 0 1 3 3V20" />
+  </>
+));
+
+// Terapi Nebulizer Inhalasi (Sungkup aerosol lebar dengan cawan obat bawah dan selang udara)
+export const NebulizerTherapy = createIcon('NebulizerTherapy', (
+  <>
+    {/* Sungkup inhalasi wajah melebar */}
+    <path d="M4.5 11.5C5 6.5 8 3 12 3s7 3.5 7.5 8.5H4.5Z" />
+    {/* Cawan obat nebulizer */}
+    <path d="M9 11.5v5a3 3 0 0 0 6 0v-5" />
+    {/* Batas larutan obat inhalasi */}
+    <path d="M9.5 15.5h5" />
+    {/* Selang suplai udara/oksigen */}
+    <path d="M12 19.5c0 2 1.5 2.5 5 2.5" />
+  </>
+));
+
 
 /* -------------------------------------------------------------------------- */
 /* 3. MANAJEMEN BED BANGSAL, ADT & RAWAT INAP                                 */
@@ -357,6 +426,22 @@ export const InpatientAdmission = createIcon('InpatientAdmission', (
     {/* Panah masuk penempatan admisi */}
     <path d="M7 4h6a2 2 0 0 1 2 2v3" />
     <path d="m12 6 3 3 3-3" />
+  </>
+));
+
+// Papan Kontrol Bangsal Ward Board (Papan status kamar dan keterisian bed bangsal)
+export const WardBoard = createIcon('WardBoard', (
+  <>
+    {/* Bingkai papan kontrol bangsal */}
+    <rect x="3" y="4" width="18" height="16" rx="2" />
+    {/* Baris tajuk dan pembagi kolom kamar */}
+    <path d="M3 8.5h18" />
+    <path d="M12 8.5v11.5" />
+    {/* Indikator status bed tiap ruang */}
+    <path d="M6 12.5h3" />
+    <path d="M6 16h3" />
+    <path d="M15 12.5h3" />
+    <path d="M15 16h3" />
   </>
 ));
 
@@ -672,6 +757,19 @@ export const MedicationReconciliation = createIcon('MedicationReconciliation', (
   </>
 ));
 
+// Vial Vaksin & Imunisasi (Vial kaca dengan segel crimp lebar dan garis dosis)
+export const VaccineVial = createIcon('VaccineVial', (
+  <>
+    {/* Segel tutup crimp aluminium vial vaksin */}
+    <rect x="7" y="3" width="10" height="3" rx="1" />
+    {/* Leher dan badan kaca vial */}
+    <path d="M10 6v2.5L7 11v8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-8l-3-2.5V6" />
+    {/* Meniskus cairan dan batas label dosis */}
+    <path d="M7 14h10" />
+    <path d="M7 17.5h4" />
+  </>
+));
+
 
 /* -------------------------------------------------------------------------- */
 /* 6. ANATOMI & SPESIALISASI KLINIS                                           */
@@ -830,6 +928,48 @@ export const DnaHelix = createIcon('DnaHelix', (
   </>
 ));
 
+// Ginjal, Nefrologi & Urologi (Sepasang ginjal bilateral dan saluran ureter)
+export const KidneyNephrology = createIcon('KidneyNephrology', (
+  <>
+    {/* Ginjal kiri dan kanan */}
+    <path d="M8.5 7.5C8 4.8 5.8 3.5 4 4.8 2.4 6 2 8.2 2 10.5s.4 4.5 2 5.7c1.8 1.3 4 0 4.5-2.7.2-1-.7-1.7-.7-3s.9-2 .7-3Z" />
+    <path d="M15.5 7.5C16 4.8 18.2 3.5 20 4.8 21.6 6 22 8.2 22 10.5s-.4 4.5-2 5.7c-1.8 1.3-4 0-4.5-2.7-.2-1 .7-1.7.7-3s-.9-2-.7-3Z" />
+    {/* Saluran ureter menuju kandung kemih */}
+    <path d="M8 10.5c2 .5 2.5 2.5 2.5 9.5" />
+    <path d="M16 10.5c-2 .5-2.5 2.5-2.5 9.5" />
+  </>
+));
+
+// Lambung & Gastroenterologi (Kantung lambung anatomis J-shape dan pilorus)
+export const StomachGastro = createIcon('StomachGastro', (
+  <>
+    {/* Kurvatura minor dan dinding kiri esofagus */}
+    <path d="M8.5 3v4.5c0 2.5 2.5 3 2.5 5 0 1.8-1.8 2.5-4.5 2.5H4" />
+    {/* Fundus, kurvatura mayor, dan saluran pilorus */}
+    <path d="M12 3v3c0 .8.8 1 1.8.4.8-.5 1.8-.9 2.7-.9C19 5.5 20.5 8 20.5 12c0 4.8-4 7.5-9.5 7.5-2.5 0-4.5-.5-7-.5" />
+  </>
+));
+
+// Hati & Hepatologi (Organ hati dua lobus dengan garis ligamen falsiformis)
+export const LiverHepatology = createIcon('LiverHepatology', (
+  <>
+    {/* Siluet lobus kanan dan kiri organ hati */}
+    <path d="M3 13c0-5 3.5-8 8.5-8 4 0 8.5 1.5 10 4 .7 1.2 0 3-1.5 3.5-3 1-5 1.5-7 3.5-2 2-4 3-6.5 3C4.5 19 3 16.5 3 13Z" />
+    {/* Ligamen falsiformis pemisah lobus */}
+    <path d="M12.5 5.1v6.4" />
+  </>
+));
+
+// Telinga, THT-KL & Audiologi (Daun telinga aurikula dan lekuk kanal auditori)
+export const EarAudiology = createIcon('EarAudiology', (
+  <>
+    {/* Daun telinga luar dan cuping telinga */}
+    <path d="M5.5 9.5a6.5 6.5 0 1 1 13 0c0 2.5-1.2 4-2.2 5.3-.9 1.2-1.3 2.2-1.8 3.7a2.8 2.8 0 0 1-5.2.5" />
+    {/* Lekuk antiheliks dan kanal telinga */}
+    <path d="M9 9.5a3 3 0 1 1 5.5 1.8c-.7 1-1.5 1.7-1.5 3.2" />
+  </>
+));
+
 
 /* -------------------------------------------------------------------------- */
 /* 7. WORKSPACE BEDAH, GIZI, BERSALIN & RUMAH SAKIT                          */
@@ -931,6 +1071,19 @@ export const SurgicalImplant = createIcon('SurgicalImplant', (
   </>
 ));
 
+// Logistik & Permintaan BHP Medis (Kotak gudang inventaris medis bertutup dengan palang)
+export const MedicalSupplyBox = createIcon('MedicalSupplyBox', (
+  <>
+    {/* Tutup peti logistik BHP */}
+    <rect x="2" y="4" width="20" height="4" rx="1" />
+    {/* Badan kotak persediaan medis */}
+    <path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8" />
+    {/* Palang penanda perbekalan kesehatan */}
+    <path d="M12 12v5" />
+    <path d="M9.5 14.5h5" />
+  </>
+));
+
 
 /* -------------------------------------------------------------------------- */
 /* 8. PERAWATAN, PASIEN & MOBILITAS                                           */
@@ -1012,6 +1165,18 @@ export const ShieldCross = createIcon('ShieldCross', (
     <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
     <path d="M12 8v8" />
     <path d="M8 12h8" />
+  </>
+));
+
+// Kebersihan Tangan 5 Momen SKP 5 (Tetesan air di atas telapak tangan terbuka)
+export const HandHygiene = createIcon('HandHygiene', (
+  <>
+    {/* Tetesan air dan larutan antiseptik */}
+    <path d="M12 2.5c0 2-3 4-3 5.5a3 3 0 0 0 6 0c0-1.5-3-3.5-3-5.5Z" />
+    {/* Manset pergelangan tangan */}
+    <rect x="2" y="14" width="4" height="7" rx="1" />
+    {/* Telapak tangan menengadah */}
+    <path d="M6 15h4l2 1.5h6a2 2 0 0 1 0 4H10l-4-1.5" />
   </>
 ));
 
@@ -1165,6 +1330,29 @@ export const VipRestricted = createIcon('VipRestricted', (
   <>
     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
     <path d="m8 10 2 2 2-3 2 3 2-2v4H8Z" />
+  </>
+));
+
+// Portal Pasien Digital (Ponsel pintar pasien dengan palang akses layanan kesehatan)
+export const PatientPortal = createIcon('PatientPortal', (
+  <>
+    {/* Perangkat ponsel portal pasien */}
+    <rect x="6" y="2" width="12" height="20" rx="2.5" />
+    {/* Palang kesehatan portal layanan */}
+    <path d="M12 7v6" />
+    <path d="M9 10h6" />
+    {/* Bilah navigasi bawah ponsel */}
+    <path d="M11 19h2" />
+  </>
+));
+
+// Tanda Tangan Elektronik Tersertifikasi TTE (Pena stylus di atas goresan tanda tangan)
+export const ElectronicSignature = createIcon('ElectronicSignature', (
+  <>
+    {/* Pena pengesahan elektronik */}
+    <path d="M18 3a2.1 2.1 0 0 1 3 3L12 15l-4 1 1-4 9-9Z" />
+    {/* Goresan tanda tangan dan garis dasar */}
+    <path d="M3 20c1.5-3 3-3 4.5 0s3 2 4.5 0c1-1.5 2-1.5 3.5 0H21" />
   </>
 ));
 

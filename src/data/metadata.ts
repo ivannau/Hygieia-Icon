@@ -147,6 +147,33 @@ export const ICON_CATALOG: IconEntry[] = [
     tags: ['usg', 'ultrasound', 'fetomaternal', 'abdomen', 'doppler', 'probe'],
     description: 'Transduser probe USG pemancar gelombang suara akustik untuk diagnostik organ & janin.',
   },
+  {
+    id: 'glucometer',
+    name: 'Glukometer POCT (Gula Darah)',
+    componentName: 'Glucometer',
+    component: Icons.Glucometer,
+    category: 'diagnostik',
+    tags: ['glukometer', 'gds', 'gula-darah', 'poct', 'diabetes', 'glucometer'],
+    description: 'Alat ukur kadar glukosa darah kapiler cepat (POCT) dengan strip uji di poliklinik maupun IGD.',
+  },
+  {
+    id: 'spirometer',
+    name: 'Spirometer Fungsi Paru',
+    componentName: 'Spirometer',
+    component: Icons.Spirometer,
+    category: 'diagnostik',
+    tags: ['spirometri', 'spirometer', 'fev1', 'paru', 'ppok', 'asma', 'pulmonologi'],
+    description: 'Alat pemeriksaan kapasitas volume dan laju aliran ekspirasi paru untuk evaluasi asma atau PPOK.',
+  },
+  {
+    id: 'weight-scale',
+    name: 'Timbangan Berat Badan Klinis',
+    componentName: 'WeightScale',
+    component: Icons.WeightScale,
+    category: 'diagnostik',
+    tags: ['timbangan', 'berat-badan', 'antropometri', 'imt', 'bmi', 'gizi', 'weight-scale'],
+    description: 'Timbangan klinis antropometri untuk pengukuran berat badan pasien saat skrining awal dan rawat jalan.',
+  },
 
   /* -------------------------------------------------------------------------- */
   /* 2. GAWAT DARURAT, TRIASE & RESUSITASI                                      */
@@ -250,6 +277,24 @@ export const ICON_CATALOG: IconEntry[] = [
     tags: ['p3k', 'pertolongan-pertama', 'emergency', 'kit-medis', 'tas'],
     description: 'Kotak perlengkapan darurat untuk penanganan awal cedera dan kecelakaan.',
   },
+  {
+    id: 'suction-pump',
+    name: 'Unit Suction Medis',
+    componentName: 'SuctionPump',
+    component: Icons.SuctionPump,
+    category: 'gawat-darurat',
+    tags: ['suction', 'penghisap-lendir', 'airway', 'igd', 'icu', 'kamar-operasi'],
+    description: 'Mesin vakum penghisap sekret jalan napas dan cairan bedah pada ruang resusitasi, ICU, dan operasi.',
+  },
+  {
+    id: 'nebulizer-therapy',
+    name: 'Terapi Nebulizer Inhalasi',
+    componentName: 'NebulizerTherapy',
+    component: Icons.NebulizerTherapy,
+    category: 'gawat-darurat',
+    tags: ['nebulizer', 'uap', 'inhalasi', 'bronkodilator', 'sesak', 'asma', 'igd'],
+    description: 'Sungkup terapi uap aerosol nebulizer untuk pemberian obat inhalasi pada gangguan napas akut.',
+  },
 
   /* -------------------------------------------------------------------------- */
   /* 3. MANAJEMEN BED BANGSAL, ADT & RAWAT INAP                                 */
@@ -307,6 +352,15 @@ export const ICON_CATALOG: IconEntry[] = [
     category: 'rawat-inap',
     tags: ['admisi', 'adt', 'mutasi', 'rawat-inap', 'masuk-bangsal', 'inpatient', 'admission'],
     description: 'Proses penerimaan, penempatan kamar bangsal, dan mutasi pasien rawat inap (Admit-Discharge-Transfer).',
+  },
+  {
+    id: 'ward-board',
+    name: 'Papan Kontrol Bangsal (Ward Board)',
+    componentName: 'WardBoard',
+    component: Icons.WardBoard,
+    category: 'rawat-inap',
+    tags: ['ward-board', 'papan-bangsal', 'bed-board', 'kamar', 'rawat-inap', 'nurse-station'],
+    description: 'Papan pemantauan status kamar, keterisian tempat tidur, dan penugasan pasien di pos perawat bangsal.',
   },
 
   /* -------------------------------------------------------------------------- */
@@ -577,6 +631,15 @@ export const ICON_CATALOG: IconEntry[] = [
     tags: ['rekonsiliasi-obat', 'pkpo', 'farmasi-klinis', 'telaah-obat', 'kars', 'med-reconciliation'],
     description: 'Pembandingan riwayat obat pasien sebelum masuk dengan instruksi terapi baru untuk mencegah duplikasi atau interaksi.',
   },
+  {
+    id: 'vaccine-vial',
+    name: 'Vial Vaksin & Imunisasi',
+    componentName: 'VaccineVial',
+    component: Icons.VaccineVial,
+    category: 'farmasi',
+    tags: ['vaksin', 'imunisasi', 'vial', 'cold-chain', 'vaccine', 'kia', 'posyandu'],
+    description: 'Vial sediaan vaksin multidosis untuk program imunisasi rutin, booster, dan pencatatan rantai dingin.',
+  },
 
   /* -------------------------------------------------------------------------- */
   /* 6. ANATOMI & SPESIALISASI KLINIS                                           */
@@ -707,6 +770,42 @@ export const ICON_CATALOG: IconEntry[] = [
     tags: ['dna', 'genetika', 'genomik', 'kromosom', 'biomolekuler'],
     description: 'Untai heliks ganda periodik dengan pasangan basa nitrogen seimbang.',
   },
+  {
+    id: 'kidney-nephrology',
+    name: 'Ginjal, Nefrologi & Urologi',
+    componentName: 'KidneyNephrology',
+    component: Icons.KidneyNephrology,
+    category: 'anatomi',
+    tags: ['ginjal', 'nefrologi', 'urologi', 'ureter', 'renal', 'kidney', 'ggk'],
+    description: 'Sepasang organ ginjal bilateral beserta saluran ureter untuk layanan nefrologi dan urologi.',
+  },
+  {
+    id: 'stomach-gastro',
+    name: 'Lambung & Gastroenterologi',
+    componentName: 'StomachGastro',
+    component: Icons.StomachGastro,
+    category: 'anatomi',
+    tags: ['lambung', 'gastroenterologi', 'pencernaan', 'maag', 'dispepsia', 'stomach'],
+    description: 'Organ lambung manusia untuk poli penyakit dalam gastroenterologi dan pencernaan atas.',
+  },
+  {
+    id: 'liver-hepatology',
+    name: 'Hati & Hepatologi',
+    componentName: 'LiverHepatology',
+    component: Icons.LiverHepatology,
+    category: 'anatomi',
+    tags: ['hati', 'hepar', 'hepatologi', 'liver', 'hepatitis', 'sirosis', 'penyakit-dalam'],
+    description: 'Organ hati berlobus ganda untuk pemeriksaan fungsi hepar, hepatologi, dan skrining hepatitis.',
+  },
+  {
+    id: 'ear-audiology',
+    name: 'Telinga, THT-KL & Audiologi',
+    componentName: 'EarAudiology',
+    component: Icons.EarAudiology,
+    category: 'anatomi',
+    tags: ['telinga', 'tht', 'audiologi', 'pendengaran', 'tuli', 'ear', 'ent'],
+    description: 'Organ pendengaran telinga luar dan kanal auditori untuk layanan poli THT-KL dan audiometri.',
+  },
 
   /* -------------------------------------------------------------------------- */
   /* 7. WORKSPACE BEDAH, GIZI, BERSALIN & RUMAH SAKIT                          */
@@ -783,6 +882,15 @@ export const ICON_CATALOG: IconEntry[] = [
     tags: ['implan', 'implant', 'udi', 'prostesis', 'ortopedi', 'kamar-operasi', 'traceability'],
     description: 'Pencatatan dan penelusuran perangkat implan bedah beserta nomor lot serta kompatibilitas MRI pasien.',
   },
+  {
+    id: 'medical-supply-box',
+    name: 'Logistik & Permintaan BHP Medis',
+    componentName: 'MedicalSupplyBox',
+    component: Icons.MedicalSupplyBox,
+    category: 'rumah-sakit',
+    tags: ['logistik', 'gudang', 'bhp', 'inventaris', 'amprah', 'supply', 'inventory'],
+    description: 'Pengelolaan stok barang habis pakai medis (BHP), permintaan unit, dan distribusi gudang farmasi.',
+  },
 
   /* -------------------------------------------------------------------------- */
   /* 8. PERAWATAN, PASIEN & MOBILITAS                                           */
@@ -849,6 +957,15 @@ export const ICON_CATALOG: IconEntry[] = [
     category: 'perawatan',
     tags: ['perisai', 'proteksi', 'asuransi', 'bpjs', 'keamanan', 'imunitas'],
     description: 'Perisai kontur geometris murni dengan palang medis proporsional.',
+  },
+  {
+    id: 'hand-hygiene',
+    name: 'Kebersihan Tangan 5 Momen (SKP 5)',
+    componentName: 'HandHygiene',
+    component: Icons.HandHygiene,
+    category: 'perawatan',
+    tags: ['cuci-tangan', 'hand-hygiene', 'skp-5', 'ppi', 'kars', 'pencegahan-infeksi'],
+    description: 'Kepatuhan kebersihan tangan lima momen WHO untuk pencegahan dan pengendalian infeksi (SKP 5 KARS).',
   },
   {
     id: 'oxygen-mask',
@@ -992,6 +1109,24 @@ export const ICON_CATALOG: IconEntry[] = [
     category: 'telemedisin-identitas',
     tags: ['vip', 'rahasia', 'privasi', 'rekam-medis-terkunci', 'keamanan', 'pasien-vip'],
     description: 'Perlindungan keamanan tingkat tinggi dengan kunci mahkota untuk rekam medis pasien VIP/Konfidensial.',
+  },
+  {
+    id: 'patient-portal',
+    name: 'Portal Pasien Digital',
+    componentName: 'PatientPortal',
+    component: Icons.PatientPortal,
+    category: 'telemedisin-identitas',
+    tags: ['portal-pasien', 'mobile-pasien', 'patient-portal', 'riwayat-pribadi', 'aplikasi-pasien'],
+    description: 'Akses mandiri pasien melalui perangkat seluler untuk melihat jadwal kunjungan, hasil lab, dan tagihan.',
+  },
+  {
+    id: 'electronic-signature',
+    name: 'Tanda Tangan Elektronik (TTE)',
+    componentName: 'ElectronicSignature',
+    component: Icons.ElectronicSignature,
+    category: 'telemedisin-identitas',
+    tags: ['tte', 'tanda-tangan-elektronik', 'e-sign', 'pmk-24', 'bsre', 'pengesahan'],
+    description: 'Pengesahan dokumen rekam medis elektronik dan resep digital menggunakan sertifikat tanda tangan elektronik.',
   },
 
   /* -------------------------------------------------------------------------- */
