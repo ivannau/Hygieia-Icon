@@ -110,3 +110,9 @@ node .agents/skills/icon-hygieia/scripts/check-catalog.mjs
 ```
 
 The checker compares every component in `src/icons/icons.tsx` against its catalog entry: displayName versus export name, forbidden SVG features, duplicate ids, categories outside `IconCategory`, tag and description completeness, and whether the icon count in this README matches the catalog.
+
+---
+
+## 📄 License
+
+Released under the [MIT License](./LICENSE). Free for personal, clinical, hospital, academic, and commercial use.
