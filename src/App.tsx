@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef } from 'react';
 import { ICON_CATALOG, CATEGORIES, IconEntry } from './data/metadata';
 import { IconCategory } from './types';
 import { BowlOfHygieia } from './icons';
@@ -23,6 +23,19 @@ export const App: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
   const [selectedIcon, setSelectedIcon] = useState<IconEntry | null>(null);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+  const modalPreviewRef = useRef<HTMLDivElement | null>(null);
+
+  const getModalSvgMarkup = (): string | null => {
+    const svgEl = modalPreviewRef.current?.querySelector('svg');
+    if (!svgEl) return null;
+    const clone = svgEl.cloneNode(true) as SVGSVGElement;
+    clone.setAttribute('width', String(size));
+    clone.setAttribute('height', String(size));
+    const effectiveStroke = absoluteStrokeWidth ? (strokeWidth * 24) / size : strokeWidth;
+    clone.setAttribute('stroke-width', String(effectiveStroke));
+    clone.removeAttribute('class');
+    return new XMLSerializer().serializeToString(clone);
+  };
 
   // Apply dark mode to document
   React.useEffect(() => {
@@ -694,6 +707,7 @@ export const App: React.FC = () => {
 
             {/* Preview Box */}
             <div
+              ref={modalPreviewRef}
               style={{
                 height: '140px',
                 borderRadius: '12px',
@@ -736,7 +750,7 @@ export const App: React.FC = () => {
             </div>
 
             {/* Quick Copy Buttons */}
-            <div style={{ display: 'flex', gap: '10px' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
               <button
                 onClick={() => {
                   const absAttr = absoluteStrokeWidth ? ' absoluteStrokeWidth' : '';
@@ -744,7 +758,7 @@ export const App: React.FC = () => {
                   copyToClipboard(snippet, snippet);
                 }}
                 style={{
-                  flex: 1,
+                  flex: '1 1 180px',
                   padding: '10px 14px',
                   borderRadius: '8px',
                   backgroundColor: 'var(--accent-color)',
@@ -774,6 +788,55 @@ export const App: React.FC = () => {
                 }}
               >
                 Salin Import
+              </button>
+              <button
+                onClick={() => {
+                  const markup = getModalSvgMarkup();
+                  if (!markup) return;
+                  copyToClipboard(markup, `SVG (${selectedIcon.id}.svg)`);
+                }}
+                style={{
+                  flex: '1 1 120px',
+                  padding: '10px 14px',
+                  borderRadius: '8px',
+                  backgroundColor: 'var(--bg-surface-elevated)',
+                  border: '1px solid var(--border-color)',
+                  color: 'var(--text-primary)',
+                  fontWeight: 600,
+                  fontSize: '13px',
+                  cursor: 'pointer',
+                }}
+              >
+                Salin SVG
+              </button>
+              <button
+                onClick={() => {
+                  const markup = getModalSvgMarkup();
+                  if (!markup) return;
+                  const blob = new Blob([markup], { type: 'image/svg+xml;charset=utf-8' });
+                  const url = URL.createObjectURL(blob);
+                  const link = document.createElement('a');
+                  link.href = url;
+                  link.download = `${selectedIcon.id}.svg`;
+                  document.body.appendChild(link);
+                  link.click();
+                  link.remove();
+                  URL.revokeObjectURL(url);
+                  showToast(`✓ Diunduh: ${selectedIcon.id}.svg`);
+                }}
+                style={{
+                  flex: '1 1 120px',
+                  padding: '10px 14px',
+                  borderRadius: '8px',
+                  backgroundColor: 'var(--bg-surface-elevated)',
+                  border: '1px solid var(--border-color)',
+                  color: 'var(--text-primary)',
+                  fontWeight: 600,
+                  fontSize: '13px',
+                  cursor: 'pointer',
+                }}
+              >
+                Unduh .SVG
               </button>
             </div>
           </div>

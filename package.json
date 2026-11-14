@@ -1,13 +1,42 @@
 {
   "name": "icon-hygieia",
-  "private": true,
+  "private": false,
   "version": "0.1.0",
   "license": "MIT",
+  "description": "225+ precision 24x24 monoline clinical & healthcare icons (React & raw SVG) for HIS/EMR, ISO 15223-1/7010, FHIR R4, SatuSehat, and BPJS workflows",
   "type": "module",
+  "main": "./dist/lib/index.cjs",
+  "module": "./dist/lib/index.mjs",
+  "types": "./dist/lib/icons/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist/lib",
+    "dist/svg",
+    "dist/icons.json",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/lib/icons/index.d.ts",
+      "import": "./dist/lib/index.mjs",
+      "require": "./dist/lib/index.cjs"
+    },
+    "./icons.json": "./dist/icons.json",
+    "./svg/*": "./dist/svg/*"
+  },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "build": "tsc -b && vite build && pnpm build:lib && pnpm build:svg",
+    "build:lib": "vite build --config vite.lib.config.ts && tsc -p tsconfig.lib.json",
+    "build:svg": "node scripts/export-svg.mjs",
+    "test": "node --test tests/icon-hygieia.test.mjs",
+    "preview": "vite preview",
+    "check": "node .agents/skills/icon-hygieia/scripts/check-catalog.mjs"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -19,5 +48,22 @@
     "@vitejs/plugin-react": "^4.3.4",
     "typescript": "^5.6.3",
     "vite": "^6.0.1"
+  },
+  "keywords": [
+    "react",
+    "icons",
+    "svg",
+    "healthcare",
+    "medical",
+    "his",
+    "emr",
+    "ehr",
+    "fhir",
+    "satusehat",
+    "bpjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivannau/Hygieia-Icon.git"
   }
 }

@@ -2006,3 +2006,651 @@ export const FhirDiagnosticReport = createIcon('FhirDiagnosticReport', (
     <path d="M8 14.5 10.5 11l2 2.5L15 10" />
   </>
 ));
+
+// ============================================================================
+// 12. EKSPANSI RISET STANDAR INTERNASIONAL (ISO / HEALTH ICONS) & SATUSEHAT/JKN
+// ============================================================================
+
+// Timbangan Bayi & Antropometri Stunting (Posyandu / KIA Kemenkes)
+export const InfantScale = createIcon('InfantScale', (
+  <>
+    {/* Baki cekung timbangan bayi */}
+    <path d="M3 7c0 3.5 3.5 5.5 9 5.5s9-2 9-5.5" />
+    {/* Leher penyangga timbangan */}
+    <path d="M9.5 12.2 8 15" />
+    <path d="M14.5 12.2 16 15" />
+    {/* Badan dasar timbangan antropometri */}
+    <rect x="5" y="15" width="14" height="5" rx="1.5" />
+    <path d="M12 17v1.5" />
+  </>
+));
+
+// Sabuk Torniket Flebotomi & IV (Pengambilan Sampel Darah Vena)
+export const TourniquetBand = createIcon('TourniquetBand', (
+  <>
+    {/* Lingkar pita elastis torniket */}
+    <path d="M13 8.5a6 5.5 0 1 0 3 6.5" />
+    {/* Gesper pengunci cepat (quick-release buckle) */}
+    <rect x="13" y="6" width="4.5" height="4.5" rx="1" />
+    {/* Ujung pita tarik */}
+    <path d="M17.5 7.5 21.5 5.5" />
+    <path d="M17.5 9.5 21.5 11.5" />
+  </>
+));
+
+// Stasiun Pencuci Mata Darurat / Eyewash (ISO 7010 Keselamatan Lab & IGD)
+export const EyeWashStation = createIcon('EyeWashStation', (
+  <>
+    {/* Simbol mata di atas pancuran */}
+    <path d="M6 7.5c1.8-2.2 4-3.5 6-3.5s4.2 1.3 6 3.5c-1.8 2.2-4 3.5-6 3.5s-4.2-1.3-6-3.5Z" />
+    <circle cx="12" cy="7.5" r="1" />
+    {/* Pancuran air ganda pencuci mata */}
+    <path d="M12 15c0-2.5-2-4-4.5-4" />
+    <path d="M12 15c0-2.5 2-4 4.5-4" />
+    {/* Mangkuk penampung eyewash */}
+    <path d="M5 15h14a5 5 0 0 1-5 5h-4a5 5 0 0 1-5-5Z" />
+    <path d="M12 20v2" />
+  </>
+));
+
+// Kit Tumpahan Infeksius / Spill Kit (Dekontaminasi Cairan Tubuh PPI)
+export const SpillKitBiohazard = createIcon('SpillKitBiohazard', (
+  <>
+    {/* Koper Spill Kit PPI */}
+    <rect x="3" y="6" width="12" height="10" rx="2" />
+    <path d="M6.5 6V4.5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1V6" />
+    <path d="M9 9.5v3" />
+    <path d="M7.5 11h3" />
+    {/* Tetesan dan genangan tumpahan cairan */}
+    <path d="M19 11c0 1.4-1.5 2.3-1.5 3.3a1.5 1.5 0 0 0 3 0c0-1-1.5-1.9-1.5-3.3Z" />
+    <path d="M14 20c0-1 1.8-1.8 4-1.8s4 .8 4 1.8-1.8 1.5-4 1.5-4-.5-4-1.5Z" />
+  </>
+));
+
+// Grafik Early Warning Score / EWS (Pemantauan Perburukan Pasien Bangsal)
+export const EarlyWarningScore = createIcon('EarlyWarningScore', (
+  <>
+    {/* Lembar observasi EWS / NEWS2 */}
+    <path d="M12 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v5" />
+    {/* Kurva eskalasi skor klinis */}
+    <path d="m6.5 14 2.5-2 2.5 1.5 3.5-4.5" />
+    {/* Lencana peringatan dini */}
+    <circle cx="17.5" cy="17.5" r="4" />
+    <path d="M17.5 16v1.5" />
+    <path d="M17.5 19.5h.01" />
+  </>
+));
+
+// Pencegahan Dekubitus & Rotasi Baring (Skala Braden / Norton)
+export const PressureUlcerRisk = createIcon('PressureUlcerRisk', (
+  <>
+    {/* Kasur dekubitus pasien */}
+    <rect x="3" y="16" width="18" height="4" rx="1.5" />
+    {/* Siluet kepala dan tubuh berbaring */}
+    <circle cx="8" cy="11.5" r="2" />
+    <path d="M12 13.5h6a2 2 0 0 0-2-2h-4v2Z" />
+    {/* Panah lengkung rotasi posisi baring berkala */}
+    <path d="M6 6.5a8 8 0 0 1 12 0" />
+    <path d="M6 4v2.5h2.5" />
+    <path d="M18 4v2.5h-2.5" />
+  </>
+));
+
+// Surgical Safety Checklist & Time-Out (Verifikasi Keselamatan Bedah SKP 4)
+export const SurgicalTimeout = createIcon('SurgicalTimeout', (
+  <>
+    {/* Papan klip daftar tilik bedah WHO */}
+    <path d="M9 4H6a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3" />
+    <rect x="9" y="2.5" width="6" height="3" rx="1" />
+    {/* Simbol jeda Time-Out sebelum insisi */}
+    <path d="M10 10.5v5" />
+    <path d="M14 10.5v5" />
+  </>
+));
+
+// Koding Klinis ICD-10 & ICD-9-CM (Klasifikasi Diagnosis & Prosedur RME)
+export const IcdCodingBook = createIcon('IcdCodingBook', (
+  <>
+    {/* Buku indeks klasifikasi penyakit */}
+    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H19" />
+    <path d="M6.5 3H19v18H6.5A2.5 2.5 0 0 1 4 18.5v-13A2.5 2.5 0 0 1 6.5 3Z" />
+    {/* Tab indeks bab diagnosis */}
+    <path d="M19 7h2" />
+    <path d="M19 12h2" />
+    {/* Baris kode alfanumerik */}
+    <path d="M9 8h5.5" />
+    <path d="M9 12h3.5" />
+  </>
+));
+
+// Dispenser Obat Unit Dose / UDD (Kotak Terbagi Waktu Minum Obat Bangsal)
+export const UnitDoseDispenser = createIcon('UnitDoseDispenser', (
+  <>
+    {/* Kaset obat terbagi pagi-siang-malam */}
+    <rect x="3" y="6" width="18" height="12" rx="2" />
+    <path d="M9 6v12" />
+    <path d="M15 6v12" />
+    <path d="M3 10h18" />
+    {/* Dosis satuan tiap kompartemen */}
+    <path d="M6 14h.01" />
+    <path d="M12 14h.01" />
+    <path d="M18 14h.01" />
+  </>
+));
+
+// Sediaan Supositoria & Ovula (Rute Rektal / Vaginal)
+export const SuppositoryRectal = createIcon('SuppositoryRectal', (
+  <>
+    {/* Siluet torpedo supositoria */}
+    <path d="M12 3C8.5 6.5 7.5 10.5 7.5 15a2.5 2.5 0 0 0 2.5 2.5h4a2.5 2.5 0 0 0 2.5-2.5c0-4.5-1-8.5-4.5-12Z" />
+    {/* Garis segel kemasan supositoria */}
+    <path d="M7.5 13.5h9" />
+    <path d="M8 21h8" />
+  </>
+));
+
+// Kelenjar Tiroid & Endokrinologi (Kelenjar Kupu-Kupu Bilobus & Trakea)
+export const ThyroidEndocrine = createIcon('ThyroidEndocrine', (
+  <>
+    {/* Batang trakea atas dan bawah */}
+    <path d="M10 3v5" />
+    <path d="M14 3v5" />
+    <path d="M10 16.5V21" />
+    <path d="M14 16.5V21" />
+    {/* Lobus kiri, ismus, dan lobus kanan tiroid */}
+    <path d="M10 9.5C8.5 7 4.5 7 4.5 11.5S8 18 10 15.5c1-1 3-1 4 0 2 2.5 5.5 1.5 5.5-4S15.5 7 14 9.5c-1 1-3 1-4 0Z" />
+  </>
+));
+
+// Tulang Belakang & Kolumna Vertebralis (Segmen Vertebra Ortopedi & Saraf)
+export const SpineVertebrae = createIcon('SpineVertebrae', (
+  <>
+    {/* Tiga segmen korpus vertebra dan prosesus */}
+    <rect x="7" y="3.5" width="10" height="4" rx="1.5" />
+    <path d="M4.5 5.5H7" />
+    <path d="M17 5.5h2.5" />
+    <rect x="6.5" y="10" width="11" height="4" rx="1.5" />
+    <path d="M4 12h2.5" />
+    <path d="M17.5 12H20" />
+    <rect x="7" y="16.5" width="10" height="4" rx="1.5" />
+    <path d="M4.5 18.5H7" />
+    <path d="M17 18.5h2.5" />
+  </>
+));
+
+// Proteksi Radiasi & Zona Radiologi (Simbol Trefoil Radiasi Pengion ISO 7010)
+export const RadiationSafety = createIcon('RadiationSafety', (
+  <>
+    {/* Inti sumber radiasi */}
+    <circle cx="12" cy="12" r="1.5" />
+    {/* Tiga bilah trefoil radiasi simetris */}
+    <path d="M9.2 10.4 5.2 8a8 8 0 0 1 5.5-4.7l.7 4.6a3.2 3.2 0 0 0-2.2 2.5Z" />
+    <path d="M14.8 10.4 18.8 8a8 8 0 0 0-5.5-4.7l-.7 4.6a3.2 3.2 0 0 1 2.2 2.5Z" />
+    <path d="M10.4 14.6 8 18.6a8 8 0 0 0 8 0l-2.4-4a3.2 3.2 0 0 1-3.2 0Z" />
+  </>
+));
+
+// Ruang Laktasi & Pojok ASI (Botol ASI & Konseling Menyusui KIA)
+export const LactationRoom = createIcon('LactationRoom', (
+  <>
+    {/* Dot dan cincin penutup botol ASI */}
+    <path d="M12 3v2" />
+    <path d="M8.5 8h7a2 2 0 0 0-2-3h-3a2 2 0 0 0-2 3Z" />
+    {/* Badan botol penampung ASI */}
+    <rect x="7.5" y="8" width="9" height="13" rx="2" />
+    {/* Garis takaran volume ASI */}
+    <path d="M10.5 12.5h3" />
+    <path d="M10.5 16.5h2" />
+  </>
+));
+
+// Riwayat Pelayanan i-Care JKN (Penelusuran Rekam Jejak Medis Lintas Faskes BPJS)
+export const BpjsIcareHistory = createIcon('BpjsIcareHistory', (
+  <>
+    {/* Lingkar panah riwayat pelayanan masa lalu */}
+    <path d="M3 12a9 9 0 1 0 3-6.7L3 8" />
+    <path d="M3 3v5h5" />
+    {/* Palang rekam jejak klinis di tengah */}
+    <path d="M12 9v6" />
+    <path d="M9 12h6" />
+  </>
+));
+
+// ============================================================================
+// 13. EKSPANSI STANDAR INTERNASIONAL ISO 15223-1, ISO 7010 & SUB-SPESIALISASI (40 IKON)
+// ============================================================================
+
+// Dermatoskop Pemeriksaan Lesi Kulit (Lensa optik pembesar dermatologi & gagang miring)
+export const Dermatoscope = createIcon('Dermatoscope', (
+  <>
+    <circle cx="13.5" cy="9.5" r="5.5" />
+    <circle cx="13.5" cy="9.5" r="2.2" />
+    <path d="M11.5 6.5a3.5 3.5 0 0 1 4.2 1.2" />
+    <path d="m9.6 13.4-5.1 5.1a1.8 1.8 0 0 0 2.5 2.5l5.1-5.1" />
+  </>
+));
+
+// Peak Flow Meter Asma / PEF (Tabung skala aliran puncak ekspirasi & corong tiup)
+export const PeakFlowMeter = createIcon('PeakFlowMeter', (
+  <>
+    <rect x="7" y="7" width="14" height="10" rx="2" />
+    <path d="M7 9.5H3.5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1H7" />
+    <path d="M10 12h8" />
+    <path d="M15 9.5v5" />
+    <path d="M11 7v2" />
+    <path d="M17 7v2" />
+  </>
+));
+
+// Monitor Holter EKG 24 Jam (Unit perekam saku portabel dengan 3 kabel sadapan dada)
+export const HolterMonitor = createIcon('HolterMonitor', (
+  <>
+    <rect x="6" y="7" width="12" height="14" rx="2" />
+    <path d="M9 7V4a1 1 0 0 0-1-1H6" />
+    <path d="M12 7V3" />
+    <path d="M15 7V4a1 1 0 0 1 1-1h2" />
+    <path d="M8.5 14H10l1-2.5 1.5 5 1-2.5h2" />
+  </>
+));
+
+// Spuit Analisis Gas Darah Arteri / AGD (Tabung heparin bertutup anaerob & tetes arteri)
+export const BloodGasSyringe = createIcon('BloodGasSyringe', (
+  <>
+    <path d="M8.5 6V3.5h3V6" />
+    <rect x="7" y="6" width="6" height="11" rx="1" />
+    <path d="M10 17v4" />
+    <path d="M7.5 21h5" />
+    <path d="M10 9.5h3" />
+    <path d="M10 13h3" />
+    <path d="M18.5 7.5c0 2-2.5 3.5-2.5 5.2a2.5 2.5 0 0 0 5 0c0-1.7-2.5-3.2-2.5-5.2Z" />
+  </>
+));
+
+// Kolposkop Ginekologi Optik (Lensa binokular serviks di atas tiang penyangga)
+export const Colposcope = createIcon('Colposcope', (
+  <>
+    <rect x="7" y="4" width="11" height="5" rx="1.5" />
+    <path d="M7 5.5H4.5a1 1 0 0 0-1 1v0a1 1 0 0 0 1 1H7" />
+    <path d="M12.5 9v9" />
+    <path d="M7 20.5 12.5 18l5.5 2.5" />
+    <circle cx="16.5" cy="12" r="1.5" />
+    <path d="M12.5 12H15" />
+  </>
+));
+
+// Pancuran Pembilas Darurat / Safety Shower (ISO 7010 Dekontaminasi Kimia/Biologis)
+export const SafetyShower = createIcon('SafetyShower', (
+  <>
+    <path d="M4 4h9v2" />
+    <path d="m9 9 4-3 4 3H9Z" />
+    <path d="M10 13v3" />
+    <path d="M13 13v5" />
+    <path d="M16 13v3" />
+    <path d="M6 4v7" />
+    <path d="m4 14 2-3 2 3H4Z" />
+  </>
+));
+
+// Toksikologi & Penanganan Keracunan (Labu senyawa beracun bertanda bahaya silang)
+export const PoisonControl = createIcon('PoisonControl', (
+  <>
+    <path d="M9 3h6" />
+    <path d="M10 3v5l-4.5 9a2 2 0 0 0 1.8 3h9.4a2 2 0 0 0 1.8-3L14 8V3" />
+    <path d="m10 13.5 4 4" />
+    <path d="m14 13.5-4 4" />
+  </>
+));
+
+// Drainase Dada WSD / Chest Tube (Botol Water Seal Drainage bersekat & selang toraks)
+export const ChestTubeDrain = createIcon('ChestTubeDrain', (
+  <>
+    <rect x="4" y="9" width="14" height="12" rx="2" />
+    <path d="M11 9v12" />
+    <path d="M4 16h7" />
+    <path d="M11 14h7" />
+    <path d="M7.5 9V5.5A2.5 2.5 0 0 1 10 3h7" />
+    <path d="M14.5 9V6" />
+  </>
+));
+
+// Perawatan Luka Bakar / Burn Unit (Nyala api termal dengan palang medis tengah)
+export const BurnCare = createIcon('BurnCare', (
+  <>
+    <path d="M12 3c2.5 2.8 6 5.5 6 10a6 6 0 0 1-12 0c0-2.5 1.2-5 3-6.8.2 1.8 1.2 2.8 2.2 2.8.8 0 1.2-2.2.8-6Z" />
+    <path d="M12 13v4" />
+    <path d="M10 15h4" />
+  </>
+));
+
+// Alat Angkat Pasien / Patient Hoist Lifter (Tiang hidrolik, sling cradle, dan roda bangsal)
+export const PatientLifter = createIcon('PatientLifter', (
+  <>
+    <circle cx="6" cy="19.5" r="1.5" />
+    <circle cx="15" cy="19.5" r="1.5" />
+    <path d="M7.5 19.5h6" />
+    <path d="M6 18V5.5A1.5 1.5 0 0 1 7.5 4H17v4" />
+    <path d="M14 8h6" />
+    <path d="M14 9.5a3 4.5 0 0 0 6 0" />
+  </>
+));
+
+// Kursi Komod Samping Bed / Bedside Commode (Kursi sanitasi pasien rawat inap)
+export const BedsideCommode = createIcon('BedsideCommode', (
+  <>
+    <path d="M6 3v18" />
+    <path d="M18 11v10" />
+    <path d="M6 6h10a2 2 0 0 1 2 2v3" />
+    <path d="M6 12h12" />
+    <path d="M8.5 12v4.5a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V12" />
+  </>
+));
+
+// Protokol Fiksasi Aman / Restraint Klinis (Sabuk pengaman empuk & gesper pemantauan)
+export const RestraintProtocol = createIcon('RestraintProtocol', (
+  <>
+    <rect x="8.5" y="7" width="7" height="10" rx="1.5" />
+    <path d="M12 10v4" />
+    <path d="M3 10h5.5" />
+    <path d="M3 14h5.5" />
+    <path d="M15.5 10H21" />
+    <path d="M15.5 14H21" />
+  </>
+));
+
+// Surat Keterangan Kematian / SMPK (Formulir medis sertifikat kematian berpita duka netral)
+export const MortalityCertificate = createIcon('MortalityCertificate', (
+  <>
+    <path d="M6 3h9l4 4v14H6V3Z" />
+    <path d="M15 3v4h4" />
+    <path d="M9 8h3" />
+    <path d="M9 10.5h7" />
+    <path d="m10 18.5 3.8-4.8a2 2 0 1 0-3.1 0l3.8 4.8" />
+  </>
+));
+
+// Register Morbiditas & Surveilans RL (Papan laporan tren statistik epidemiologi penyakit)
+export const MorbidityRegistry = createIcon('MorbidityRegistry', (
+  <>
+    <rect x="4" y="3" width="16" height="18" rx="2" />
+    <path d="M8 7h8" />
+    <path d="M8 16v-3" />
+    <path d="M12 16v-6" />
+    <path d="M16 16v-4.5" />
+  </>
+));
+
+// Jejak Audit Akses RME / Audit Trail (Log akses rekam medis elektronik dengan lup inspeksi)
+export const AuditTrailLog = createIcon('AuditTrailLog', (
+  <>
+    <path d="M12 20H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v5" />
+    <path d="M7 8h7" />
+    <path d="M7 12h4" />
+    <path d="M7 16h3" />
+    <circle cx="16.5" cy="16.5" r="3.5" />
+    <path d="m19 19 2.5 2.5" />
+  </>
+));
+
+// Panduan Praktik Klinis / Clinical Pathway (Alur langkah bertahap masuk hingga pulang)
+export const ClinicalPathway = createIcon('ClinicalPathway', (
+  <>
+    <rect x="3" y="4" width="6" height="5" rx="1" />
+    <path d="M9 6.5h8a2.5 2.5 0 0 1 0 5H7a2.5 2.5 0 0 0 0 5h8" />
+    <rect x="15" y="14" width="6" height="5" rx="1" />
+  </>
+));
+
+// Obat Kewaspadaan Tinggi / High-Alert Medication (Segitiga peringatan melingkupi kapsul SKP 3)
+export const HighAlertMedication = createIcon('HighAlertMedication', (
+  <>
+    <path d="m12 3-9.5 17h19L12 3Z" />
+    <path d="m10 17 4-4a1.8 1.8 0 0 0-2.5-2.5l-4 4a1.8 1.8 0 0 0 2.5 2.5Z" />
+  </>
+));
+
+// Bahaya Obat Sitotoksik K3 Farmasi (Simbol biohazard tiga sabit mengelilingi inti)
+export const CytotoxicHazard = createIcon('CytotoxicHazard', (
+  <>
+    <circle cx="12" cy="12.5" r="1.8" />
+    <path d="M9.5 9.2a3.5 3.5 0 1 1 5 0" />
+    <path d="M8.5 11.8a3.5 3.5 0 1 0 2.5 5.6" />
+    <path d="M15.5 11.8a3.5 3.5 0 1 1-2.5 5.6" />
+  </>
+));
+
+// Koyo Medis & Plester Transdermal (Matriks bantalan pelepasan obat dengan lipatan kupas)
+export const TransdermalPatch = createIcon('TransdermalPatch', (
+  <>
+    <path d="M15 4H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V9Z" />
+    <path d="M15 4v3a2 2 0 0 0 2 2h3" />
+    <rect x="8" y="10" width="6" height="6" rx="1.5" />
+  </>
+));
+
+// Pena Injeksi Insulin Subkutan (Bodi pena takaran dosis, klip saku, dan jarum halus)
+export const InsulinPen = createIcon('InsulinPen', (
+  <>
+    <path d="M12 2v3" />
+    <rect x="9" y="5" width="6" height="12" rx="1.5" />
+    <path d="M9 8h6" />
+    <path d="M11 11.5h2" />
+    <path d="M11 14h2" />
+    <path d="M10.5 17v3.5a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V17" />
+    <path d="M9 7H7v5" />
+  </>
+));
+
+// Anatomi Prostat & Urologi (Kandung kemih, lobus prostat bilateral, dan saluran uretra)
+export const ProstateUrology = createIcon('ProstateUrology', (
+  <>
+    <path d="M6 6.5C6 4.3 8.7 3 12 3s6 1.3 6 3.5c0 2-1.5 3.5-3 4.2H9c-1.5-.7-3-2.2-3-4.2Z" />
+    <path d="M8.5 11.5C6.5 12 6 14 6.5 16c.5 1.8 2 3 3.5 3h4c1.5 0 3-1.2 3.5-3 .5-2 0-4-2-4.5" />
+    <path d="M12 10.7V21" />
+  </>
+));
+
+// Skrining Mamografi & Onkologi Payudara (Pelat kompresi mamografi & titik fokus lesi)
+export const BreastMammography = createIcon('BreastMammography', (
+  <>
+    <path d="M4 4v16" />
+    <path d="M4 6h15" />
+    <path d="M4 19h15" />
+    <path d="M7 8.5h5a4 4 0 0 1 0 8H7" />
+    <circle cx="12.5" cy="12.5" r="1.5" />
+  </>
+));
+
+// Sendi Ortopedi & Artroskopi (Ujung tulang artikular atas-bawah dengan cakram meniskus)
+export const JointArthroscopy = createIcon('JointArthroscopy', (
+  <>
+    <path d="M9 3v2.5c-2 .5-3 1.5-3 2.8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2c0-1.3-1-2.3-3-2.8V3" />
+    <path d="M7 12.2h10" />
+    <path d="M9 21v-2.5c-2-.5-3-1.5-3-2.8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2c0 1.3-1 2.3-3 2.8V21" />
+  </>
+));
+
+// Dermatologi Lapisan Kulit (Epidermis, dermis, subkutis & folikel rambut miring)
+export const SkinDermatology = createIcon('SkinDermatology', (
+  <>
+    <path d="M3 10.5h8.5" />
+    <path d="M15.5 10.5H21" />
+    <path d="M3 15.5h6" />
+    <path d="M14 15.5h7" />
+    <path d="M3 20h18" />
+    <path d="M10 15.5c0 1.5 2 2 2 0 0-3 1-7.5 3-11.5" />
+  </>
+));
+
+// Koloproktologi & Kolonoskopi Usus Besar (Segmen kolon berlekuk haustra & rektum)
+export const ColonEndoscopy = createIcon('ColonEndoscopy', (
+  <>
+    <path d="M7 18a2 2 0 0 1-1.5-3.2 2 2 0 0 1 0-3.6A2 2 0 0 1 7.5 8a2 2 0 0 1 3-1.5 2 2 0 0 1 3 0A2 2 0 0 1 16.5 8a2 2 0 0 1 2 3.2 2 2 0 0 1 0 3.6 2 2 0 0 1-1.5 3.2" />
+    <path d="M9.5 16.5v-6h5V15a2 2 0 0 1-2 2h-1v4" />
+  </>
+));
+
+// Sistem Penghalang Steril / ISO 15223-1 Sterile Barrier (Kantung segel ganda berpalang steril)
+export const SterileBarrier = createIcon('SterileBarrier', (
+  <>
+    <rect x="4" y="4" width="16" height="16" rx="2.5" />
+    <rect x="7" y="7" width="10" height="10" rx="1.5" />
+    <path d="M12 10v4" />
+    <path d="M10 12h4" />
+  </>
+));
+
+// Alat Sekali Pakai / ISO 15223-1 Do Not Reuse (Lingkaran larangan mencoret angka 2)
+export const SingleUseDoNotReuse = createIcon('SingleUseDoNotReuse', (
+  <>
+    <circle cx="12" cy="12" r="9" />
+    <path d="M9.8 9.2a2.2 2.2 0 0 1 4.4.4c0 1.4-2.2 2.4-4.4 4.4h4.4" />
+    <path d="m5.7 5.7 12.6 12.6" />
+  </>
+));
+
+// Batas Suhu Penyimpanan / ISO 15223-1 Temperature Limit (Termometer & rentang batas min-maks)
+export const TemperatureLimit = createIcon('TemperatureLimit', (
+  <>
+    <path d="M10 13.5V5a2 2 0 1 0-4 0v8.5a3 3 0 1 0 4 0Z" />
+    <path d="M14 5h6" />
+    <path d="M14 19h6" />
+    <path d="M17 5v14" />
+    <path d="m15 7 2-2 2 2" />
+    <path d="m15 17 2 2 2-2" />
+  </>
+));
+
+// Peringatan Medan Magnet Kuat MRI / ISO 7010 (Magnet tapal kuda & garis gaya magnet)
+export const MagneticFieldWarning = createIcon('MagneticFieldWarning', (
+  <>
+    <path d="M5 10.5V15a7 7 0 0 0 14 0v-4.5h-4V15a3 3 0 0 1-6 0v-4.5H5Z" />
+    <path d="M5 13.5h4" />
+    <path d="M15 13.5h4" />
+    <path d="M8 7c1.2-1 2.5-1.5 4-1.5s2.8.5 4 1.5" />
+    <path d="M9.5 4c.8-.5 1.6-.7 2.5-.7s1.7.2 2.5.7" />
+  </>
+));
+
+// Bahaya Sinar Laser Medis / ISO 7010 (Pusat pancaran sinar starburst dan berkas laser)
+export const LaserHazard = createIcon('LaserHazard', (
+  <>
+    <circle cx="9" cy="12" r="2.5" />
+    <path d="M11.5 12H22" />
+    <path d="M9 6.5v-3" />
+    <path d="M9 17.5v3" />
+    <path d="M6.5 12h-3" />
+    <path d="m11 9.5 2.5-2.5" />
+    <path d="m11 14.5 2.5 2.5" />
+    <path d="m7 9.5-2.5-2.5" />
+    <path d="m7 14.5-2.5 2.5" />
+  </>
+));
+
+// Apron Timbal Proteksi Radiasi (Rompi pelindung radiologi tanpa lengan & sabuk pengencang)
+export const LeadApron = createIcon('LeadApron', (
+  <>
+    <path d="M7 4h3a2 2 0 0 0 4 0h3v15a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V4Z" />
+    <path d="m10 9.5 2 1.5 2-1.5" />
+    <path d="M6.5 14h11" />
+    <rect x="10.5" y="13" width="3" height="2.5" rx="0.5" />
+  </>
+));
+
+// Perawatan Paliatif & Hospis (Sepasang telapak tangan terbuka menopang hati)
+export const PalliativeCare = createIcon('PalliativeCare', (
+  <>
+    <path d="M12 11.5S8 8.7 8 6.2A2.2 2.2 0 0 1 12 5a2.2 2.2 0 0 1 4 1.2c0 2.5-4 5.3-4 5.3Z" />
+    <path d="M4 14.5c2 0 3.5 1 5.5 2.5h5c2-1.5 3.5-2.5 5.5-2.5" />
+    <path d="M4 17.5c2.5 1.5 5 2.5 8 2.5s5.5-1 8-2.5" />
+  </>
+));
+
+// Fisioterapi & Rehabilitasi Medik (Beban latihan rehabilitasi penguatan otot)
+export const PhysiotherapyRehab = createIcon('PhysiotherapyRehab', (
+  <>
+    <path d="M2.5 12h2" />
+    <path d="M4.5 8.5v7" />
+    <path d="M7 6v12" />
+    <path d="M7 12h10" />
+    <path d="M17 6v12" />
+    <path d="M19.5 8.5v7" />
+    <path d="M19.5 12h2" />
+  </>
+));
+
+// Alat Bantu Dengar / Hearing Aid (Unit BTE melengkung belakang telinga & gelombang suara)
+export const HearingAid = createIcon('HearingAid', (
+  <>
+    <path d="M10 6.5a5 5 0 0 1 8.5 3.5c0 2.8-1.8 4.8-3 6.5-.8 1.2-2.2 1.5-3.2.8-.8-.6-.8-1.8 0-2.8.8-1 1.7-2.2 1.7-4.5a2 2 0 0 0-4 0" />
+    <path d="M10 10H7a2 2 0 0 0-2 2v3.5a1.5 1.5 0 0 0 1.5 1.5H8" />
+    <path d="M20.5 7.5a5 5 0 0 1 0 5" />
+  </>
+));
+
+// Kantong Stoma / Perawatan Ostomi (Kantong kolostomi berkontur & cincin wafer stoma)
+export const OstomyBag = createIcon('OstomyBag', (
+  <>
+    <path d="M6 6.5C6 4.5 8.5 3 12 3s6 1.5 6 3.5c0 2.5-1 5-1 8.5 0 3.5-2.2 6-5 6s-5-2.5-5-6c0-3.5-1-6-1-8.5Z" />
+    <circle cx="12" cy="8.5" r="2.5" />
+  </>
+));
+
+// BPJS Aplicares Ketersediaan TT (Tempat tidur rawat inap dengan sinyal sinkronisasi real-time)
+export const BpjsAplicaresBed = createIcon('BpjsAplicaresBed', (
+  <>
+    <path d="M3 12v8" />
+    <path d="M3 17h14v3" />
+    <path d="M3 14h10a2 2 0 0 1 2 2v1" />
+    <path d="M5.5 12h2" />
+    <path d="M15 9h.01" />
+    <path d="M15 6a4 4 0 0 1 4 4" />
+    <path d="M15 3a7 7 0 0 1 7 7" />
+  </>
+));
+
+// Antrean Online Mobile JKN / BPJS Antrol (Ponsel check-in dengan jam waktu antrean nyata)
+export const BpjsAntreanMjkn = createIcon('BpjsAntreanMjkn', (
+  <>
+    <path d="M13 20H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v5" />
+    <path d="M6.5 8h4" />
+    <path d="M6.5 11.5h3" />
+    <circle cx="16.5" cy="16.5" r="4.5" />
+    <path d="M16.5 14.5v2l1.5 1" />
+  </>
+));
+
+// Kamus Farmasi & Alkes SatuSehat KFA (Indeks katalog master obat nasional Kemenkes)
+export const SatuSehatKfa = createIcon('SatuSehatKfa', (
+  <>
+    <rect x="3" y="4" width="18" height="16" rx="2" />
+    <path d="M3 9h18" />
+    <path d="M7 6.5h2" />
+    <path d="M12 6.5h5" />
+    <rect x="7" y="12.5" width="10" height="4.5" rx="2.25" />
+    <path d="M12 12.5v4.5" />
+  </>
+));
+
+// Pencabutan Persetujuan / Consent Revocation (Dokumen persetujuan dengan lencana silang batal)
+export const ConsentRevocation = createIcon('ConsentRevocation', (
+  <>
+    <path d="M12 20H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9l4 4v4" />
+    <path d="M14 3v4h4" />
+    <path d="M7 9h5" />
+    <path d="M7 13h4" />
+    <circle cx="17.5" cy="17" r="3.5" />
+    <path d="m15.8 15.3 3.4 3.4" />
+    <path d="m19.2 15.3-3.4 3.4" />
+  </>
+));
+
+// Autentikasi Dua Faktor Nakes / 2FA OTP RME (Gembok akses aman dengan 3 titik token OTP)
+export const TwoFactorAuthMfa = createIcon('TwoFactorAuthMfa', (
+  <>
+    <rect x="4" y="10" width="16" height="11" rx="2" />
+    <path d="M8 10V6.5a4 4 0 0 1 8 0V10" />
+    <path d="M8.5 15.5h.01" />
+    <path d="M12 15.5h.01" />
+    <path d="M15.5 15.5h.01" />
+  </>
+));
