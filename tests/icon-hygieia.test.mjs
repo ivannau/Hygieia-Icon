@@ -12,10 +12,10 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
 const require = createRequire(import.meta.url);
 
-test('Test 1: Catalog & Component Count matches >= 220 clinical icons', () => {
+test('Test 1: Catalog & Component Count matches >= 260 clinical icons', () => {
   const { ICON_CATALOG, CATEGORIES } = Hygieia;
   assert.ok(Array.isArray(ICON_CATALOG), 'ICON_CATALOG must be an array');
-  assert.ok(ICON_CATALOG.length >= 220, `Expected >= 220 icons, got ${ICON_CATALOG.length}`);
+  assert.ok(ICON_CATALOG.length >= 260, `Expected >= 260 icons, got ${ICON_CATALOG.length}`);
   assert.equal(CATEGORIES.length, 11, 'Expected 11 medical categories');
 
   const seenIds = new Set();
