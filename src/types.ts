@@ -11,7 +11,14 @@ export interface IconProps extends SVGProps<SVGSVGElement> {
    * Ketebalan garis (stroke width).
    * @default 2
    */
-  strokeWidth?: number;
+  strokeWidth?: number | string;
+
+  /**
+   * Jika true, ketebalan garis tetap konstan dalam satuan pixel layar terlepas dari ukuran ikon
+   * (non-scaling stroke, kompatibel dengan Lucide).
+   * @default false
+   */
+  absoluteStrokeWidth?: boolean;
 
   /**
    * Warna garis. Mendukung 'currentColor' agar mengikuti CSS text color.

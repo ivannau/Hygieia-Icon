@@ -203,6 +203,33 @@ export const WeightScale = createIcon('WeightScale', (
   </>
 ));
 
+// Pot Spesimen Urin & Sputum (Wadah sampel berulir tutup lebar dan garis skala volume)
+export const UrineSpecimenCup = createIcon('UrineSpecimenCup', (
+  <>
+    {/* Tutup ulir pot spesimen */}
+    <rect x="5" y="3" width="14" height="3" rx="1" />
+    {/* Badan wadah spesimen meruncing */}
+    <path d="M6.5 6 8 19a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2L17.5 6" />
+    {/* Garis skala mililiter spesimen */}
+    <path d="M7.5 11h3.5" />
+    <path d="M8 15h3" />
+  </>
+));
+
+// Garpu Tala Diagnostik (Uji pendengaran Rinne-Weber THT dan sensasi getar neurologi)
+export const TuningFork = createIcon('TuningFork', (
+  <>
+    {/* Cabang garpu tala berbentuk U */}
+    <path d="M8 3v7a4 4 0 0 0 8 0V3" />
+    {/* Tangkai dan landasan tumpu garpu tala */}
+    <path d="M12 14v7" />
+    <path d="M9.5 21h5" />
+    {/* Gelombang getaran akustik */}
+    <path d="M4.5 5a5 5 0 0 0 0 5" />
+    <path d="M19.5 5a5 5 0 0 1 0 5" />
+  </>
+));
+
 
 /* -------------------------------------------------------------------------- */
 /* 2. GAWAT DARURAT, TRIASE & RESUSITASI                                      */
@@ -351,6 +378,34 @@ export const NebulizerTherapy = createIcon('NebulizerTherapy', (
   </>
 ));
 
+// Aktivasi Code Blue Henti Jantung (Lampu sirine darurat menyala dengan sinar peringatan)
+export const CodeBlue = createIcon('CodeBlue', (
+  <>
+    {/* Kubah lampu sirine darurat */}
+    <path d="M7 17v-4a5 5 0 0 1 10 0v4" />
+    {/* Dudukan dasar sirine */}
+    <rect x="4" y="17" width="16" height="4" rx="1" />
+    {/* Sinar peringatan aktivasi darurat */}
+    <path d="M12 2v2.5" />
+    <path d="M3.5 5.5 5.5 7" />
+    <path d="M20.5 5.5 18.5 7" />
+  </>
+));
+
+// Ambu Bag Resusitasi BVM (Balon pompa ventilasi manual, katup, dan sungkup wajah)
+export const BagValveMask = createIcon('BagValveMask', (
+  <>
+    {/* Balon pompa ventilasi mandiri */}
+    <rect x="3" y="8" width="11" height="8" rx="4" />
+    {/* Garis cengkeraman balon pompa */}
+    <path d="M8.5 8v8" />
+    {/* Katup penghubung pasien */}
+    <path d="M14 12h3" />
+    {/* Sungkup resusitasi wajah */}
+    <path d="M17 8l4 2.2v3.6L17 16V8Z" />
+  </>
+));
+
 
 /* -------------------------------------------------------------------------- */
 /* 3. MANAJEMEN BED BANGSAL, ADT & RAWAT INAP                                 */
@@ -442,6 +497,32 @@ export const WardBoard = createIcon('WardBoard', (
     <path d="M6 16h3" />
     <path d="M15 12.5h3" />
     <path d="M15 16h3" />
+  </>
+));
+
+// Balance Cairan Intake-Output (Tetesan cairan tubuh dengan panah masuk dan keluar)
+export const FluidBalanceChart = createIcon('FluidBalanceChart', (
+  <>
+    {/* Tetesan cairan fisiologis */}
+    <path d="M8 4.5C8 4.5 3 10 3 14a5 5 0 0 0 10 0c0-4-5-9.5-5-9.5Z" />
+    {/* Panah cairan masuk (intake) dan keluar (output) */}
+    <path d="M18.5 3v7" />
+    <path d="m16 7.5 2.5 2.5 2.5-2.5" />
+    <path d="M18.5 21v-7" />
+    <path d="m16 16.5 2.5-2.5 2.5 2.5" />
+  </>
+));
+
+// Tiang Infus Roda Bangsal (Tiang penyangga infus berkait ganda dan kaki beroda)
+export const IvPoleStand = createIcon('IvPoleStand', (
+  <>
+    {/* Kait gantung ganda tiang infus */}
+    <path d="M6 7V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2" />
+    {/* Batang tiang vertikal dan kaki beroda */}
+    <path d="M12 3v15" />
+    <path d="m7 21 5-3 5 3" />
+    {/* Kantong cairan infus tergantung */}
+    <rect x="3.5" y="7" width="5" height="7" rx="1.5" />
   </>
 ));
 
@@ -562,6 +643,59 @@ export const MpiIdentityMerge = createIcon('MpiIdentityMerge', (
     <path d="M10 7h4a2 2 0 0 1 2 2v2" />
     <path d="M10 17h4a2 2 0 0 0 2-2v-2" />
     <rect x="16" y="9" width="6" height="6" rx="1" />
+  </>
+));
+
+// Asesmen Skala Nyeri Wong-Baker / VAS (Ekspresi wajah nyeri terstandar)
+export const PainScale = createIcon('PainScale', (
+  <>
+    {/* Kontur wajah skala asesmen nyeri */}
+    <circle cx="12" cy="12" r="9" />
+    {/* Mata menyipit menahan nyeri */}
+    <path d="m7.5 8.5 2.5 1.5-2.5 1.5" />
+    <path d="m16.5 8.5-2.5 1.5 2.5 1.5" />
+    {/* Lengkung mulut kesakitan */}
+    <path d="M8.5 16.5a4.5 4.5 0 0 1 7 0" />
+  </>
+));
+
+// Konsultasi & Rujukan Internal Antar-DPJP (Dua gelembung dialog klinis dengan palang medis)
+export const ClinicalConsult = createIcon('ClinicalConsult', (
+  <>
+    {/* Gelembung konsultasi dokter pengirim */}
+    <path d="M4 4h11a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H8l-3 3v-3H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
+    {/* Palang medis topik konsultasi klinis */}
+    <path d="M9.5 7v5" />
+    <path d="M7 9.5h5" />
+    {/* Gelembung balasan dokter konsulen */}
+    <path d="M17 9h3a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-1v2.5L16 19h-3a2 2 0 0 1-2-2v-2" />
+  </>
+));
+
+// Surat Keterangan Medis SKD (Lembar surat resmi bersegel roseta dan pita pengesahan)
+export const MedicalCertificate = createIcon('MedicalCertificate', (
+  <>
+    {/* Lembar surat keterangan dokter */}
+    <path d="M11 19H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3.5" />
+    {/* Baris isi surat keterangan */}
+    <path d="M7 7h8" />
+    <path d="M7 11h4" />
+    {/* Stempel segel dan pita sertifikat */}
+    <circle cx="16.5" cy="14" r="3" />
+    <path d="m14.5 16.2-1 4.8 3-1.5 3 1.5-1-4.8" />
+  </>
+));
+
+// Pelaporan Insiden Keselamatan Pasien IKP (Papan klip laporan insiden dengan tanda seru peringatan)
+export const IncidentReportIkp = createIcon('IncidentReportIkp', (
+  <>
+    {/* Penjepit atas papan klip laporan */}
+    <rect x="8" y="2" width="8" height="4" rx="1" />
+    {/* Badan papan klip laporan insiden */}
+    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+    {/* Simbol seru peringatan insiden keselamatan */}
+    <path d="M12 10v4.5" />
+    <path d="M12 18h.01" />
   </>
 ));
 
@@ -770,6 +904,19 @@ export const VaccineVial = createIcon('VaccineVial', (
   </>
 ));
 
+// Rantai Dingin Penyimpanan Vaksin Cold Chain (Termometer berdampingan dengan kristal suhu dingin)
+export const ColdChainStorage = createIcon('ColdChainStorage', (
+  <>
+    {/* Termometer pemantau suhu penyimpanan */}
+    <path d="M9 4v9.5a3.5 3.5 0 1 1-4 0V4a2 2 0 0 1 4 0Z" />
+    {/* Kristal suhu rantai dingin 2-8 derajat */}
+    <path d="M17.5 4v12" />
+    <path d="M14 10h7" />
+    <path d="m15.5 6 2 2 2-2" />
+    <path d="m15.5 14 2-2 2 2" />
+  </>
+));
+
 
 /* -------------------------------------------------------------------------- */
 /* 6. ANATOMI & SPESIALISASI KLINIS                                           */
@@ -970,6 +1117,46 @@ export const EarAudiology = createIcon('EarAudiology', (
   </>
 ));
 
+// Pediatri & Tumbuh Kembang Anak (Pasien anak di samping mistar pengukur tinggi badan)
+export const PediatricsChild = createIcon('PediatricsChild', (
+  <>
+    {/* Tiang pengukur tinggi badan stadiometer */}
+    <path d="M4 3v18" />
+    <path d="M4 3h4" />
+    <path d="M4 8h2.5" />
+    <path d="M4 13h2" />
+    <path d="M4 18h2.5" />
+    {/* Siluet pasien anak */}
+    <circle cx="15" cy="9.5" r="2.5" />
+    <path d="M10.5 21c0-3.2 2-5.5 4.5-5.5s4.5 2.3 4.5 5.5" />
+  </>
+));
+
+// Kandungan, Ginekologi & Reproduksi Wanita (Rahim uterus, tuba falopi, dan ovarium bilateral)
+export const UterusGynecology = createIcon('UterusGynecology', (
+  <>
+    {/* Korpus dan serviks uterus */}
+    <path d="M9 8a4.5 4.5 0 0 1 6 0c0 4.5-1.5 7.5-2 11h-2c-.5-3.5-2-6.5-2-11Z" />
+    {/* Lengkung tuba falopi kiri dan kanan */}
+    <path d="M9 8C5.5 8 3 9.5 3 12" />
+    <path d="M15 8c3.5 0 6 1.5 6 4" />
+    {/* Ovarium bilateral */}
+    <circle cx="4.5" cy="15.5" r="1.5" />
+    <circle cx="19.5" cy="15.5" r="1.5" />
+  </>
+));
+
+// Kesehatan Jiwa, Psikiatri & Psikologi Klinis (Profil kepala manusia dengan palang pemulihan jiwa)
+export const MentalHealth = createIcon('MentalHealth', (
+  <>
+    {/* Siluet profil kepala dan wajah */}
+    <path d="M7 21v-3a7 7 0 1 1 11-5.7L20 15l-2 1v2a2 2 0 0 1-2 2h-4" />
+    {/* Palang kesehatan jiwa dan kognitif */}
+    <path d="M11 7.5v5" />
+    <path d="M8.5 10h5" />
+  </>
+));
+
 
 /* -------------------------------------------------------------------------- */
 /* 7. WORKSPACE BEDAH, GIZI, BERSALIN & RUMAH SAKIT                          */
@@ -1012,12 +1199,12 @@ export const AnesthesiaMachine = createIcon('AnesthesiaMachine', (
 // 75. Gizi Klinik & Instalasi Diet (Piring Porsi Diet Pasien)
 export const ClinicalNutrition = createIcon('ClinicalNutrition', (
   <>
-    <circle cx="12" cy="12" r="9" />
-    <circle cx="12" cy="12" r="5" />
-    <path d="M2 8v4a2 2 0 0 0 2 2h0v6" />
-    <path d="M2 8h4v4" />
-    <path d="M20 8v12" />
-    <path d="M20 8c-2 0-3 1.5-3 4v2h3" />
+    <circle cx="12" cy="12" r="4.5" />
+    <circle cx="12" cy="12" r="2" />
+    <path d="M2 5v4a1.5 1.5 0 0 0 3 0V5" />
+    <path d="M3.5 10.5V19" />
+    <path d="M21.5 5v14" />
+    <path d="M21.5 5c-1.6 0-2.5 1.8-2.5 4.5V13h2.5" />
   </>
 ));
 
@@ -1081,6 +1268,17 @@ export const MedicalSupplyBox = createIcon('MedicalSupplyBox', (
     {/* Palang penanda perbekalan kesehatan */}
     <path d="M12 12v5" />
     <path d="M9.5 14.5h5" />
+  </>
+));
+
+// Baju Bedah OK & Seragam Klinis APD (Tunik scrub kerah V dengan palang medis)
+export const SurgicalScrubs = createIcon('SurgicalScrubs', (
+  <>
+    {/* Baju seragam bedah kerah V */}
+    <path d="M9 3 12 7l3-4 5.5 2.5a1.5 1.5 0 0 1 .7 2L19.5 10H17v9a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-9H4.5L2.8 7.5a1.5 1.5 0 0 1 .7-2L9 3Z" />
+    {/* Palang penanda tenaga medis */}
+    <path d="M12 11.5v5" />
+    <path d="M9.5 14h5" />
   </>
 ));
 
@@ -1177,6 +1375,27 @@ export const HandHygiene = createIcon('HandHygiene', (
     <rect x="2" y="14" width="4" height="7" rx="1" />
     {/* Telapak tangan menengadah */}
     <path d="M6 15h4l2 1.5h6a2 2 0 0 1 0 4H10l-4-1.5" />
+  </>
+));
+
+// Asuhan Antenatal Ibu Hamil ANC / KIA (Siluet ibu hamil profil samping)
+export const MaternalAntenatal = createIcon('MaternalAntenatal', (
+  <>
+    {/* Kepala ibu hamil */}
+    <circle cx="10.5" cy="5.5" r="2.5" />
+    {/* Profil tubuh dan lekuk kehamilan antenatal */}
+    <path d="M7.5 21v-6c0-2.2 1.5-4 3.5-4 1.4 0 2.4.9 2.9 2.2.4 1 1.4 1.3 2.3 2.1 1 .9 1.3 2 1.3 3a2.7 2.7 0 0 1-2.7 2.7H12" />
+  </>
+));
+
+// Kunjungan Rumah & Layanan Home Care (Atap rumah hunian pasien dengan palang perawatan medis)
+export const HomeCareVisit = createIcon('HomeCareVisit', (
+  <>
+    {/* Atap dan dinding rumah pasien */}
+    <path d="M4 10.2a2 2 0 0 1 .7-1.5l6-5.2a2 2 0 0 1 2.6 0l6 5.2a2 2 0 0 1 .7 1.5V19a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8.8Z" />
+    {/* Palang layanan kunjungan kesehatan rumah */}
+    <path d="M12 11v5" />
+    <path d="M9.5 13.5h5" />
   </>
 ));
 
@@ -1287,6 +1506,37 @@ export const HospitalInvoice = createIcon('HospitalInvoice', (
   </>
 ));
 
+// Katalog Tarif & Layanan Rumah Sakit (Buku katalog terbuka dengan daftar baris tarif)
+export const TariffCatalogue = createIcon('TariffCatalogue', (
+  <>
+    {/* Punggung dan halaman kiri-kanan buku katalog */}
+    <path d="M12 6v14" />
+    <path d="M12 6a3 3 0 0 0-3-3H3v14h6a3 3 0 0 1 3 3" />
+    <path d="M12 6a3 3 0 0 1 3-3h6v14h-6a3 3 0 0 0-3 3" />
+    {/* Daftar baris kode tindakan dan tarif */}
+    <path d="M6 8h3" />
+    <path d="M6 12h3" />
+    <path d="M15 8h3" />
+    <path d="M15 12h3" />
+  </>
+));
+
+// Anjungan Pendaftaran Mandiri APM (Kios layar sentuh berdiri untuk check-in dan cetak SEP)
+export const SelfServiceKiosk = createIcon('SelfServiceKiosk', (
+  <>
+    {/* Layar sentuh anjungan mandiri */}
+    <rect x="5" y="3" width="14" height="10" rx="2" />
+    <path d="M12 6v4" />
+    <path d="M10 8h4" />
+    {/* Tiang pedestal dan celah tiket/SEP */}
+    <path d="M9 13v8" />
+    <path d="M15 13v8" />
+    <path d="M11 16.5h2" />
+    {/* Landasan lantai kios */}
+    <path d="M6 21h12" />
+  </>
+));
+
 
 /* -------------------------------------------------------------------------- */
 /* 10. TELEMEDISIN, IDENTITAS & KEAMANAN                                       */
@@ -1318,10 +1568,12 @@ export const DigitalKtp = createIcon('DigitalKtp', (
 // 96. Akses Darurat Break-Glass (Emergency Glass Override dengan Palu)
 export const SecBreakGlass = createIcon('SecBreakGlass', (
   <>
-    <rect x="3" y="3" width="18" height="18" rx="2" strokeDasharray="3 3" />
-    <path d="m7 7 4 4-2 2" />
-    <path d="M17 7l-4 4 2 2" />
-    <circle cx="12" cy="12" r="2" />
+    <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+    <path d="M14.5 4.5 17 2l5 5-2.5 2.5-5-5Z" />
+    <path d="m17 7-5.5 5.5" />
+    <path d="M11.5 12.5 8 11l-5 1" />
+    <path d="m11.5 12.5-2.5 4.5 1 4" />
+    <path d="m11.5 12.5 4.5 2.5 5 1" />
   </>
 ));
 
@@ -1353,6 +1605,35 @@ export const ElectronicSignature = createIcon('ElectronicSignature', (
     <path d="M18 3a2.1 2.1 0 0 1 3 3L12 15l-4 1 1-4 9-9Z" />
     {/* Goresan tanda tangan dan garis dasar */}
     <path d="M3 20c1.5-3 3-3 4.5 0s3 2 4.5 0c1-1.5 2-1.5 3.5 0H21" />
+  </>
+));
+
+// Verifikasi Biometrik Wajah FRISTA (Bingkai pemindai pengenalan wajah pasien)
+export const BiometricFaceId = createIcon('BiometricFaceId', (
+  <>
+    {/* Sudut bingkai pemindaian biometrik */}
+    <path d="M3 7V5a2 2 0 0 1 2-2h2" />
+    <path d="M17 3h2a2 2 0 0 1 2 2v2" />
+    <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
+    <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
+    {/* Fitur geometri wajah terverifikasi */}
+    <path d="M8.5 8.5V10" />
+    <path d="M15.5 8.5V10" />
+    <path d="M12 9v3.5h-1.5" />
+    <path d="M9 16a4.5 4.5 0 0 0 6 0" />
+  </>
+));
+
+// Pemantauan Pasien Jarak Jauh Wearable (Jam pintar medis dengan grafik gelombang nadi)
+export const RemotePatientMonitoring = createIcon('RemotePatientMonitoring', (
+  <>
+    {/* Bodi perangkat jam pemantau vital */}
+    <circle cx="12" cy="12" r="6" />
+    {/* Tali pergelangan atas dan bawah */}
+    <path d="m15.5 6.8-.6-3.3a1.5 1.5 0 0 0-1.5-1.2h-2.8a1.5 1.5 0 0 0-1.5 1.2l-.6 3.3" />
+    <path d="m8.5 17.2.6 3.3a1.5 1.5 0 0 0 1.5 1.2h2.8a1.5 1.5 0 0 0 1.5-1.2l.6-3.3" />
+    {/* Gelombang sinyal telemetri detak jantung */}
+    <path d="M9 12h1.5l1-2 1 4 1-2H15" />
   </>
 ));
 
@@ -1502,11 +1783,11 @@ export const SurgicalSiteMarking = createIcon('SurgicalSiteMarking', (
 // 110. Peringatan Risiko Jatuh (Gelang Kuning / Skala Morse SKP-6 KARS)
 export const FallRiskAlert = createIcon('FallRiskAlert', (
   <>
-    <path d="M12 3 2 21h20L12 3Z" />
-    <circle cx="9" cy="9" r="1.5" />
-    <path d="m9 11 2 3-2 3" />
-    <path d="m11 14 3-2" />
-    <path d="M7 19h10" />
+    <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+    <circle cx="12" cy="11" r="1.25" />
+    <path d="m11.5 13.5 1.5 2.5-2 2.5" />
+    <path d="m9 15 2.5-1.5" />
+    <path d="m13 16 3-1.2" />
   </>
 ));
 

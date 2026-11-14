@@ -10,6 +10,7 @@ export const createIcon = (
       {
         size = 24,
         strokeWidth = 2,
+        absoluteStrokeWidth = false,
         color = 'currentColor',
         className = '',
         children,
@@ -17,6 +18,12 @@ export const createIcon = (
       },
       ref
     ) => {
+      const numericSize = Number(String(size).replace(/px$/i, '')) || 24;
+      const numericStroke = Number(String(strokeWidth).replace(/px$/i, '')) || 2;
+      const calculatedStrokeWidth = absoluteStrokeWidth
+        ? (numericStroke * 24) / numericSize
+        : strokeWidth;
+
       return (
         <svg
           ref={ref}
@@ -26,7 +33,7 @@ export const createIcon = (
           viewBox="0 0 24 24"
           fill="none"
           stroke={color}
-          strokeWidth={strokeWidth}
+          strokeWidth={calculatedStrokeWidth}
           strokeLinecap="round"
           strokeLinejoin="round"
           className={`hygieia-icon hygieia-icon-${displayName.toLowerCase()} ${className}`.trim()}

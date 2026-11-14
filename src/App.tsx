@@ -17,7 +17,8 @@ export const App: React.FC = () => {
   const [search, setSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<IconCategory | 'all'>('all');
   const [size, setSize] = useState<number>(32);
-  const [strokeWidth, setStrokeWidth] = useState<number>(2);
+  const [strokeWidth, setStrokeWidth] = useState<number>(1.5);
+  const [absoluteStrokeWidth, setAbsoluteStrokeWidth] = useState<boolean>(false);
   const [selectedColor, setSelectedColor] = useState<string>('currentColor');
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
   const [selectedIcon, setSelectedIcon] = useState<IconEntry | null>(null);
@@ -255,14 +256,14 @@ export const App: React.FC = () => {
             </div>
           </div>
 
-          {/* Row 2: Live Customizer (Size, Stroke Width, Color Presets) */}
+          {/* Row 2: Live Customizer (Size, Stroke Width, Non-scaling stroke, Color, Reset) */}
           <div
             style={{
               paddingTop: '16px',
               borderTop: '1px solid var(--border-color)',
               display: 'flex',
               flexWrap: 'wrap',
-              gap: '24px',
+              gap: '20px',
               alignItems: 'center',
             }}
           >
@@ -275,12 +276,12 @@ export const App: React.FC = () => {
                 type="range"
                 min="16"
                 max="64"
-                step="4"
+                step="2"
                 value={size}
                 onChange={(e) => setSize(Number(e.target.value))}
-                style={{ cursor: 'pointer' }}
+                style={{ cursor: 'pointer', accentColor: 'var(--accent-color)' }}
               />
-              <span style={{ fontSize: '12px', fontFamily: 'var(--font-mono)', minWidth: '34px', color: 'var(--text-muted)' }}>
+              <span style={{ fontSize: '12px', fontFamily: 'var(--font-mono)', minWidth: '36px', color: 'var(--text-muted)' }}>
                 {size}px
               </span>
             </div>
@@ -292,34 +293,144 @@ export const App: React.FC = () => {
               </span>
               <input
                 type="range"
-                min="1"
-                max="3.5"
+                min="0.75"
+                max="3"
                 step="0.25"
                 value={strokeWidth}
                 onChange={(e) => setStrokeWidth(Number(e.target.value))}
-                style={{ cursor: 'pointer' }}
+                style={{ cursor: 'pointer', accentColor: 'var(--accent-color)' }}
               />
-              <span style={{ fontSize: '12px', fontFamily: 'var(--font-mono)', minWidth: '34px', color: 'var(--text-muted)' }}>
-                {strokeWidth}
+              <span style={{ fontSize: '12px', fontFamily: 'var(--font-mono)', minWidth: '44px', color: 'var(--text-muted)' }}>
+                {strokeWidth}px
               </span>
             </div>
 
-            {/* Color Presets */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            {/* Non-scaling stroke Toggle */}
+            <button
+              type="button"
+              role="switch"
+              aria-checked={absoluteStrokeWidth}
+              onClick={() => setAbsoluteStrokeWidth((prev) => !prev)}
+              title="Jaga ketebalan garis tetap konstan (px) saat ukuran ikon diperbesar atau diperkecil (absoluteStrokeWidth)"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                background: 'none',
+                border: 'none',
+                padding: '2px 0',
+                cursor: 'pointer',
+                color: 'var(--text-secondary)',
+                fontSize: '13px',
+                fontWeight: 600,
+              }}
+            >
+              <span>Non-scaling stroke</span>
+              <span
+                style={{
+                  position: 'relative',
+                  width: '36px',
+                  height: '20px',
+                  borderRadius: '999px',
+                  backgroundColor: absoluteStrokeWidth ? 'var(--accent-color)' : 'var(--border-color)',
+                  transition: 'background-color 0.2s ease',
+                  display: 'inline-block',
+                  flexShrink: 0,
+                }}
+              >
+                <span
+                  style={{
+                    position: 'absolute',
+                    top: '2px',
+                    left: absoluteStrokeWidth ? '18px' : '2px',
+                    width: '16px',
+                    height: '16px',
+                    borderRadius: '50%',
+                    backgroundColor: '#ffffff',
+                    boxShadow: '0 1px 2px rgba(0, 0, 0, 0.2)',
+                    transition: 'left 0.2s ease',
+                  }}
+                />
+              </span>
+            </button>
+
+            {/* Color Picker & Presets */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
               <span style={{ fontSize: '13px', fontWeight: 600, color: 'var(--text-secondary)' }}>
                 Warna:
               </span>
+              <label
+                title="Pilih warna kustom"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '7px',
+                  padding: '3px 9px 3px 4px',
+                  borderRadius: '8px',
+                  border: '1px solid var(--border-color)',
+                  backgroundColor: 'var(--bg-primary)',
+                  cursor: 'pointer',
+                  position: 'relative',
+                }}
+              >
+                <span
+                  style={{
+                    width: '18px',
+                    height: '18px',
+                    borderRadius: '5px',
+                    backgroundColor:
+                      selectedColor === 'currentColor'
+                        ? isDarkMode
+                          ? '#f8fafc'
+                          : '#0f172a'
+                        : selectedColor,
+                    border: '1px solid rgba(128, 128, 128, 0.25)',
+                    display: 'inline-block',
+                    flexShrink: 0,
+                  }}
+                />
+                <input
+                  type="color"
+                  aria-label="Pilih warna kustom"
+                  value={
+                    selectedColor === 'currentColor'
+                      ? isDarkMode
+                        ? '#f8fafc'
+                        : '#0f172a'
+                      : selectedColor
+                  }
+                  onChange={(e) => setSelectedColor(e.target.value)}
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    width: '100%',
+                    height: '100%',
+                    opacity: 0,
+                    cursor: 'pointer',
+                  }}
+                />
+                <span
+                  style={{
+                    fontSize: '12px',
+                    fontFamily: 'var(--font-mono)',
+                    color: 'var(--text-muted)',
+                  }}
+                >
+                  {selectedColor === 'currentColor' ? '[default]' : selectedColor}
+                </span>
+              </label>
               <div style={{ display: 'flex', gap: '6px' }}>
                 {COLOR_PRESETS.map((p) => {
                   const isCur = selectedColor === p.value;
                   return (
                     <button
                       key={p.name}
+                      type="button"
                       title={p.name}
                       onClick={() => setSelectedColor(p.value)}
                       style={{
-                        width: '24px',
-                        height: '24px',
+                        width: '22px',
+                        height: '22px',
                         borderRadius: '50%',
                         backgroundColor: p.hex,
                         border: isCur ? '2px solid var(--accent-color)' : '1px solid rgba(0,0,0,0.1)',
@@ -332,6 +443,35 @@ export const App: React.FC = () => {
                 })}
               </div>
             </div>
+
+            {/* Reset Customizer */}
+            <button
+              type="button"
+              title="Reset ukuran, ketebalan garis, warna, dan non-scaling stroke"
+              onClick={() => {
+                setSize(32);
+                setStrokeWidth(1.5);
+                setSelectedColor('currentColor');
+                setAbsoluteStrokeWidth(false);
+              }}
+              style={{
+                marginLeft: 'auto',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                padding: '6px 10px',
+                borderRadius: '8px',
+                border: '1px solid var(--border-color)',
+                backgroundColor: 'var(--bg-primary)',
+                color: 'var(--text-secondary)',
+                fontSize: '12px',
+                fontWeight: 600,
+                cursor: 'pointer',
+              }}
+            >
+              <span aria-hidden="true" style={{ fontSize: '14px', lineHeight: 1 }}>↺</span>
+              <span>Reset</span>
+            </button>
           </div>
         </div>
       </section>
@@ -414,7 +554,11 @@ export const App: React.FC = () => {
                       padding: '12px 0',
                     }}
                   >
-                    <IconComp size={size} strokeWidth={strokeWidth} />
+                    <IconComp
+                      size={size}
+                      strokeWidth={strokeWidth}
+                      absoluteStrokeWidth={absoluteStrokeWidth}
+                    />
                   </div>
 
                   <div style={{ textAlign: 'center', width: '100%', marginTop: '8px' }}>
@@ -562,7 +706,11 @@ export const App: React.FC = () => {
                 marginBottom: '16px',
               }}
             >
-              <selectedIcon.component size={64} strokeWidth={strokeWidth} />
+              <selectedIcon.component
+                size={64}
+                strokeWidth={strokeWidth}
+                absoluteStrokeWidth={absoluteStrokeWidth}
+              />
             </div>
 
             {/* Metadata */}
@@ -591,7 +739,8 @@ export const App: React.FC = () => {
             <div style={{ display: 'flex', gap: '10px' }}>
               <button
                 onClick={() => {
-                  const snippet = `<${selectedIcon.componentName} size={${size}} strokeWidth={${strokeWidth}} />`;
+                  const absAttr = absoluteStrokeWidth ? ' absoluteStrokeWidth' : '';
+                  const snippet = `<${selectedIcon.componentName} size={${size}} strokeWidth={${strokeWidth}}${absAttr} />`;
                   copyToClipboard(snippet, snippet);
                 }}
                 style={{

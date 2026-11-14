@@ -174,6 +174,24 @@ export const ICON_CATALOG: IconEntry[] = [
     tags: ['timbangan', 'berat-badan', 'antropometri', 'imt', 'bmi', 'gizi', 'weight-scale'],
     description: 'Timbangan klinis antropometri untuk pengukuran berat badan pasien saat skrining awal dan rawat jalan.',
   },
+  {
+    id: 'urine-specimen-cup',
+    name: 'Pot Spesimen Urin & Sputum',
+    componentName: 'UrineSpecimenCup',
+    component: Icons.UrineSpecimenCup,
+    category: 'diagnostik',
+    tags: ['urin', 'urinalisis', 'sputum', 'dahak', 'bta', 'spesimen', 'pot-sampel'],
+    description: 'Wadah penampung sampel urin atau dahak berulir untuk pemeriksaan urinalisis dan mikrobiologi.',
+  },
+  {
+    id: 'tuning-fork',
+    name: 'Garpu Tala Diagnostik (Rinne-Weber)',
+    componentName: 'TuningFork',
+    component: Icons.TuningFork,
+    category: 'diagnostik',
+    tags: ['garpu-tala', 'rinne', 'weber', 'vibrasi', 'pendengaran', 'neuropati', 'tuning-fork'],
+    description: 'Alat uji garpu tala frekuensi akustik untuk tes hantaran pendengaran dan sensasi getar saraf.',
+  },
 
   /* -------------------------------------------------------------------------- */
   /* 2. GAWAT DARURAT, TRIASE & RESUSITASI                                      */
@@ -295,6 +313,24 @@ export const ICON_CATALOG: IconEntry[] = [
     tags: ['nebulizer', 'uap', 'inhalasi', 'bronkodilator', 'sesak', 'asma', 'igd'],
     description: 'Sungkup terapi uap aerosol nebulizer untuk pemberian obat inhalasi pada gangguan napas akut.',
   },
+  {
+    id: 'code-blue',
+    name: 'Aktivasi Code Blue (Henti Jantung)',
+    componentName: 'CodeBlue',
+    component: Icons.CodeBlue,
+    category: 'gawat-darurat',
+    tags: ['code-blue', 'henti-jantung', 'resusitasi', 'rjp', 'emergensi', 'igd', 'sirine'],
+    description: 'Aktivasi tim tanggap darurat medis Code Blue untuk penanganan henti jantung atau gagal napas akut.',
+  },
+  {
+    id: 'bag-valve-mask',
+    name: 'Ambu Bag Resusitasi (BVM)',
+    componentName: 'BagValveMask',
+    component: Icons.BagValveMask,
+    category: 'gawat-darurat',
+    tags: ['ambu-bag', 'bvm', 'bag-valve-mask', 'ventilasi-manual', 'resusitasi', 'henti-napas', 'igd'],
+    description: 'Alat bantu napas pompa balon manual (Bag-Valve-Mask) untuk ventilasi tekanan positif darurat.',
+  },
 
   /* -------------------------------------------------------------------------- */
   /* 3. MANAJEMEN BED BANGSAL, ADT & RAWAT INAP                                 */
@@ -361,6 +397,24 @@ export const ICON_CATALOG: IconEntry[] = [
     category: 'rawat-inap',
     tags: ['ward-board', 'papan-bangsal', 'bed-board', 'kamar', 'rawat-inap', 'nurse-station'],
     description: 'Papan pemantauan status kamar, keterisian tempat tidur, dan penugasan pasien di pos perawat bangsal.',
+  },
+  {
+    id: 'fluid-balance-chart',
+    name: 'Balance Cairan Intake & Output',
+    componentName: 'FluidBalanceChart',
+    component: Icons.FluidBalanceChart,
+    category: 'rawat-inap',
+    tags: ['balance-cairan', 'intake-output', 'hidrasi', 'diuresis', 'pemantauan-cairan', 'rawat-inap', 'icu'],
+    description: 'Pencatatan keseimbangan volume cairan masuk dan keluar pasien selama perawatan di bangsal maupun ICU.',
+  },
+  {
+    id: 'iv-pole-stand',
+    name: 'Tiang Infus Roda Bangsal',
+    componentName: 'IvPoleStand',
+    component: Icons.IvPoleStand,
+    category: 'rawat-inap',
+    tags: ['tiang-infus', 'iv-pole', 'standar-infus', 'mobilitas-bangsal', 'rawat-inap', 'terapi-cairan'],
+    description: 'Tiang penyangga kantong cairan intravena beroda untuk menunjang mobilitas pasien rawat inap.',
   },
 
   /* -------------------------------------------------------------------------- */
@@ -455,6 +509,42 @@ export const ICON_CATALOG: IconEntry[] = [
     category: 'dokumentasi-cppt',
     tags: ['mpi', 'merge', 'rekam-medis', 'duplikat', 'identitas', 'mrn'],
     description: 'Penyatuan dua kartu rekam medis pasien duplikat menjadi satu nomor rekam medis utama.',
+  },
+  {
+    id: 'pain-scale',
+    name: 'Penilaian Skala Nyeri (Wong-Baker)',
+    componentName: 'PainScale',
+    component: Icons.PainScale,
+    category: 'dokumentasi-cppt',
+    tags: ['skala-nyeri', 'wong-baker', 'vas', 'nrs', 'asesmen-nyeri', 'cppt', 'triase'],
+    description: 'Asesmen intensitas nyeri pasien menggunakan skala ekspresi wajah pada pengkajian keperawatan dan medis.',
+  },
+  {
+    id: 'clinical-consult',
+    name: 'Konsultasi Medis & Jawab Konsul',
+    componentName: 'ClinicalConsult',
+    component: Icons.ClinicalConsult,
+    category: 'dokumentasi-cppt',
+    tags: ['konsul', 'konsultasi', 'rabeg', 'spesialis', 'visite-bersama', 'cppt', 'dpjp'],
+    description: 'Permintaan konsultasi klinis antar dokter spesialis dan dokumentasi jawaban konsul pada berkas pasien.',
+  },
+  {
+    id: 'medical-certificate',
+    name: 'Surat Keterangan Medis Resmi',
+    componentName: 'MedicalCertificate',
+    component: Icons.MedicalCertificate,
+    category: 'dokumentasi-cppt',
+    tags: ['surat-sakit', 'surat-sehat', 'skd', 'legalisasi', 'keterangan-medis', 'rekam-medis', 'dokumen'],
+    description: 'Penerbitan surat keterangan sakit, sehat, atau keterangan medis resmi yang disahkan oleh dokter pemeriksa.',
+  },
+  {
+    id: 'incident-report-ikp',
+    name: 'Laporan Insiden Keselamatan (IKP)',
+    componentName: 'IncidentReportIkp',
+    component: Icons.IncidentReportIkp,
+    category: 'dokumentasi-cppt',
+    tags: ['ikp', 'insiden', 'ktd', 'knc', 'sentinel', 'keselamatan-pasien', 'mutu'],
+    description: 'Formulir pelaporan insiden keselamatan pasien (KTD, KNC, KTC, Sentinel) kepada komite mutu rumah sakit.',
   },
 
   /* -------------------------------------------------------------------------- */
@@ -640,6 +730,15 @@ export const ICON_CATALOG: IconEntry[] = [
     tags: ['vaksin', 'imunisasi', 'vial', 'cold-chain', 'vaccine', 'kia', 'posyandu'],
     description: 'Vial sediaan vaksin multidosis untuk program imunisasi rutin, booster, dan pencatatan rantai dingin.',
   },
+  {
+    id: 'cold-chain-storage',
+    name: 'Suhu Rantai Dingin (Cold Chain)',
+    componentName: 'ColdChainStorage',
+    component: Icons.ColdChainStorage,
+    category: 'farmasi',
+    tags: ['cold-chain', 'rantai-dingin', 'suhu-vaksin', 'penyimpanan-obat', 'biologis', 'insulin', 'farmasi'],
+    description: 'Pemantauan suhu penyimpanan rantai dingin 2 hingga 8 derajat Celsius untuk sediaan vaksin dan biologis.',
+  },
 
   /* -------------------------------------------------------------------------- */
   /* 6. ANATOMI & SPESIALISASI KLINIS                                           */
@@ -806,6 +905,33 @@ export const ICON_CATALOG: IconEntry[] = [
     tags: ['telinga', 'tht', 'audiologi', 'pendengaran', 'tuli', 'ear', 'ent'],
     description: 'Organ pendengaran telinga luar dan kanal auditori untuk layanan poli THT-KL dan audiometri.',
   },
+  {
+    id: 'pediatrics-child',
+    name: 'Kesehatan Anak & Tumbuh Kembang',
+    componentName: 'PediatricsChild',
+    component: Icons.PediatricsChild,
+    category: 'anatomi',
+    tags: ['anak', 'pediatri', 'tumbuh-kembang', 'antropometri', 'stunting', 'poli-anak', 'posyandu'],
+    description: 'Pemantauan antropometri tinggi badan dan tumbuh kembang pasien anak di poli pediatri atau klinik anak.',
+  },
+  {
+    id: 'uterus-gynecology',
+    name: 'Kandungan & Ginekologi (Obgyn)',
+    componentName: 'UterusGynecology',
+    component: Icons.UterusGynecology,
+    category: 'anatomi',
+    tags: ['kandungan', 'ginekologi', 'obgyn', 'rahim', 'uterus', 'ovarium', 'reproduksi'],
+    description: 'Organ reproduksi rahim, tuba falopi, dan ovarium untuk layanan poliklinik kebidanan dan kandungan.',
+  },
+  {
+    id: 'mental-health',
+    name: 'Kesehatan Jiwa & Psikiatri',
+    componentName: 'MentalHealth',
+    component: Icons.MentalHealth,
+    category: 'anatomi',
+    tags: ['kesehatan-jiwa', 'psikiatri', 'psikologi', 'mental', 'konseling', 'poli-jiwa', 'kejiwaan'],
+    description: 'Layanan pemeriksaan psikiatri, konsultasi psikologi klinis, dan pemulihan kesehatan jiwa pasien.',
+  },
 
   /* -------------------------------------------------------------------------- */
   /* 7. WORKSPACE BEDAH, GIZI, BERSALIN & RUMAH SAKIT                          */
@@ -891,6 +1017,15 @@ export const ICON_CATALOG: IconEntry[] = [
     tags: ['logistik', 'gudang', 'bhp', 'inventaris', 'amprah', 'supply', 'inventory'],
     description: 'Pengelolaan stok barang habis pakai medis (BHP), permintaan unit, dan distribusi gudang farmasi.',
   },
+  {
+    id: 'surgical-scrubs',
+    name: 'Baju Bedah OK & Seragam Klinis',
+    componentName: 'SurgicalScrubs',
+    component: Icons.SurgicalScrubs,
+    category: 'rumah-sakit',
+    tags: ['baju-ok', 'scrubs', 'apd', 'seragam-medis', 'kamar-operasi', 'tenaga-kesehatan'],
+    description: 'Pakaian kerja steril kamar operasi (scrubs) dan perlengkapan pelindung petugas medis rumah sakit.',
+  },
 
   /* -------------------------------------------------------------------------- */
   /* 8. PERAWATAN, PASIEN & MOBILITAS                                           */
@@ -966,6 +1101,24 @@ export const ICON_CATALOG: IconEntry[] = [
     category: 'perawatan',
     tags: ['cuci-tangan', 'hand-hygiene', 'skp-5', 'ppi', 'kars', 'pencegahan-infeksi'],
     description: 'Kepatuhan kebersihan tangan lima momen WHO untuk pencegahan dan pengendalian infeksi (SKP 5 KARS).',
+  },
+  {
+    id: 'maternal-antenatal',
+    name: 'Layanan Antenatal Ibu Hamil (ANC)',
+    componentName: 'MaternalAntenatal',
+    component: Icons.MaternalAntenatal,
+    category: 'perawatan',
+    tags: ['ibu-hamil', 'anc', 'kia', 'antenatal', 'kebidanan', 'obstetri', 'kehamilan'],
+    description: 'Pemeriksaan kehamilan terpadu antenatal care untuk pemantauan kesehatan ibu hamil dan janin.',
+  },
+  {
+    id: 'home-care-visit',
+    name: 'Kunjungan Rumah (Home Care)',
+    componentName: 'HomeCareVisit',
+    component: Icons.HomeCareVisit,
+    category: 'perawatan',
+    tags: ['home-care', 'kunjungan-rumah', 'perkesmas', 'rawat-rumah', 'komunitas', 'geriatri', 'perawatan'],
+    description: 'Layanan kunjungan perawatan medis dan keperawatan berkelanjutan langsung di rumah pasien.',
   },
   {
     id: 'oxygen-mask',
@@ -1070,6 +1223,24 @@ export const ICON_CATALOG: IconEntry[] = [
     tags: ['tagihan', 'billing', 'invoice', 'kwitansi', 'tarif', 'keuangan', 'biaya-perawatan'],
     description: 'Rincian tagihan biaya layanan klinis, tindakan, obat, dan penjaminan pasien di unit billing rumah sakit.',
   },
+  {
+    id: 'tariff-catalogue',
+    name: 'Katalog Tarif & Tindakan Medis',
+    componentName: 'TariffCatalogue',
+    component: Icons.TariffCatalogue,
+    category: 'integrasi-nasional',
+    tags: ['tarif', 'katalog-layanan', 'tindakan', 'master-tarif', 'billing', 'jasa-medis', 'keuangan'],
+    description: 'Daftar baku tarif layanan, tindakan medis, dan akomodasi kelas perawatan rumah sakit.',
+  },
+  {
+    id: 'self-service-kiosk',
+    name: 'Anjungan Pendaftaran Mandiri (APM)',
+    componentName: 'SelfServiceKiosk',
+    component: Icons.SelfServiceKiosk,
+    category: 'integrasi-nasional',
+    tags: ['apm', 'kios-mandiri', 'check-in', 'anjungan-pasien', 'antrean-online', 'cetak-sep', 'pendaftaran'],
+    description: 'Mesin anjungan mandiri pasien untuk registrasi antrean poliklinik, verifikasi rujukan, dan cetak bukti layanan.',
+  },
 
   /* -------------------------------------------------------------------------- */
   /* 10. TELEMEDISIN, IDENTITAS & KEAMANAN                                       */
@@ -1127,6 +1298,24 @@ export const ICON_CATALOG: IconEntry[] = [
     category: 'telemedisin-identitas',
     tags: ['tte', 'tanda-tangan-elektronik', 'e-sign', 'pmk-24', 'bsre', 'pengesahan'],
     description: 'Pengesahan dokumen rekam medis elektronik dan resep digital menggunakan sertifikat tanda tangan elektronik.',
+  },
+  {
+    id: 'biometric-face-id',
+    name: 'Verifikasi Biometrik Wajah (FRISTA)',
+    componentName: 'BiometricFaceId',
+    component: Icons.BiometricFaceId,
+    category: 'telemedisin-identitas',
+    tags: ['frista', 'biometrik-wajah', 'face-id', 'pengenalan-wajah', 'autentikasi', 'identitas-pasien'],
+    description: 'Pemindaian biometrik pengenalan wajah pasien untuk validasi identitas kepesertaan secara cepat.',
+  },
+  {
+    id: 'remote-patient-monitoring',
+    name: 'Pemantauan Pasien Jarak Jauh',
+    componentName: 'RemotePatientMonitoring',
+    component: Icons.RemotePatientMonitoring,
+    category: 'telemedisin-identitas',
+    tags: ['rpm', 'wearable', 'smartwatch', 'telemetri', 'pemantauan-jarak-jauh', 'iomt', 'telemedisin'],
+    description: 'Pemantauan tanda vital pasien secara kontinu dari jarak jauh melalui perangkat sensor kesehatan pakai.',
   },
 
   /* -------------------------------------------------------------------------- */
