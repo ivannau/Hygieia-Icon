@@ -3052,3 +3052,76 @@ export const SmartCardStrSip = createIcon('SmartCardStrSip', (
     <path d="M7 14.5v2" />
   </>
 ));
+
+// Terminologi Klinis SNOMED CT (Graf konsep polihierarki dengan simpul akar klinis)
+export const SnomedCtOntology = createIcon('SnomedCtOntology', (
+  <>
+    <circle cx="12" cy="5.5" r="3" />
+    <path d="M12 4.3v2.4" />
+    <path d="M10.8 5.5h2.4" />
+    <circle cx="5" cy="13" r="2" />
+    <circle cx="19" cy="13" r="2" />
+    <circle cx="12" cy="19.5" r="2" />
+    <path d="m9.6 7.3-3.2 4" />
+    <path d="m14.4 7.3 3.2 4" />
+    <path d="M7 13h10" />
+    <path d="m6.6 14.3 3.8 3.6" />
+    <path d="m17.4 14.3-3.8 3.6" />
+  </>
+));
+
+// Kode Pemeriksaan LOINC Lab & Observasi (Tabung spesimen terhubung ke indeks kode standar)
+export const LoincLabCode = createIcon('LoincLabCode', (
+  <>
+    <path d="M4 3h6" />
+    <path d="M5 3v13a2 2 0 0 0 4 0V3" />
+    <path d="M5 10h4" />
+    <path d="M9 12h4" />
+    <rect x="13" y="6" width="8" height="12" rx="2" />
+    <path d="M15.5 10h3" />
+    <path d="M15.5 14h2" />
+  </>
+));
+
+// Pemetaan Terminologi / ConceptMap (Dua kamus kode lokal & standar dihubungkan panah translasi)
+export const TerminologyMapping = createIcon('TerminologyMapping', (
+  <>
+    <rect x="2" y="4" width="6.5" height="16" rx="1.5" />
+    <path d="M4.5 8h1.5" />
+    <path d="M4.5 12h1.5" />
+    <path d="M4.5 16h1.5" />
+    <rect x="15.5" y="4" width="6.5" height="16" rx="1.5" />
+    <path d="M18 8h1.5" />
+    <path d="M18 12h1.5" />
+    <path d="M18 16h1.5" />
+    <path d="M8.5 9.5h7" />
+    <path d="m13.5 7.5 2 2-2 2" />
+    <path d="M15.5 14.5h-7" />
+    <path d="m10.5 12.5-2 2 2 2" />
+  </>
+));
+
+// Citra Medis DICOM & PACS Viewer (Tumpukan potongan citra radiologi dengan bidikan penampang)
+export const DicomPacsServer = createIcon('DicomPacsServer', (
+  <>
+    <rect x="3" y="6" width="15" height="15" rx="2" />
+    <path d="M7 6V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2" />
+    <circle cx="10.5" cy="13.5" r="3.5" />
+    <path d="M10.5 8.5V10" />
+    <path d="M10.5 17v1.5" />
+    <path d="M5.5 13.5H7" />
+    <path d="M14 13.5h1.5" />
+  </>
+));
+
+// Klasifikasi Obat ATC & Fornas (Kapsul obat terhubung ke pohon hierarki kelas terapi WHO ATC)
+export const AtcDrugClassification = createIcon('AtcDrugClassification', (
+  <>
+    <rect x="3" y="3" width="11" height="5" rx="2.5" />
+    <path d="M8.5 3v5" />
+    <path d="M6 8v11h4" />
+    <path d="M6 13.5h4" />
+    <rect x="10" y="11.5" width="9" height="4" rx="1" />
+    <rect x="10" y="17" width="11" height="4" rx="1" />
+  </>
+));

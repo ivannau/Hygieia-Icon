@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.1.0",
   "license": "MIT",
-  "description": "260+ precision 24x24 monoline clinical & healthcare icons (React & raw SVG) for HIS/EMR, ISO 15223-1/7010, FHIR R4, SatuSehat, and BPJS workflows",
+  "description": "265+ precision 24x24 monoline clinical & healthcare icons (React & raw SVG) for HIS/EMR, ISO 15223-1/7010, FHIR R4, SNOMED CT, LOINC, SatuSehat, and BPJS workflows",
   "type": "module",
   "main": "./dist/lib/index.cjs",
   "module": "./dist/lib/index.mjs",
