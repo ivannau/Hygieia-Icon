@@ -3125,3 +3125,130 @@ export const AtcDrugClassification = createIcon('AtcDrugClassification', (
     <rect x="10" y="17" width="11" height="4" rx="1" />
   </>
 ));
+
+// Instalasi Gawat Darurat / IGD (Unit gerbang emergensi dengan sirene aktif & palang medis)
+export const EmergencyDepartment = createIcon('EmergencyDepartment', (
+  <>
+    <path d="M4 10h16v11H4V10Z" />
+    <path d="M2 21h20" />
+    <path d="M9 10V7.5a3 3 0 0 1 6 0V10" />
+    <path d="M12 2.5v2" />
+    <path d="m6.5 4.5 1.3 1.3" />
+    <path d="m17.5 4.5-1.3 1.3" />
+    <path d="M12 13v5" />
+    <path d="M9.5 15.5h5" />
+  </>
+));
+
+// Rawat Jalan & Poliklinik / RJ (Pintu poli walk-in berpalang medis dengan panah kunjungan masuk)
+export const OutpatientClinic = createIcon('OutpatientClinic', (
+  <>
+    <path d="M11 3h8a2 2 0 0 1 2 2v16H11" />
+    <path d="M11 3v5" />
+    <path d="M11 16v5" />
+    <path d="M16 9.5v5" />
+    <path d="M13.5 12h5" />
+    <path d="M3 12h8" />
+    <path d="m8 9 3 3-3 3" />
+  </>
+));
+
+// Layanan Rawat Inap / RI (Tempat tidur bangsal dengan simbol menginap bulan sabit & palang RS)
+export const InpatientWardService = createIcon('InpatientWardService', (
+  <>
+    <path d="M6.5 3.5v4" />
+    <path d="M4.5 5.5h4" />
+    <path d="M19.5 7.2A3.5 3.5 0 0 1 14.8 2.5a3.8 3.8 0 1 0 4.7 4.7Z" />
+    <path d="M3 11v10" />
+    <path d="M3 16h18v5" />
+    <path d="M3 13.5h15a3 3 0 0 1 3 2.5" />
+    <circle cx="6.5" cy="11.5" r="1.5" />
+  </>
+));
+
+// Perawatan Intensif / ICU ICCU PICU (Bed pasien terhubung langsung dengan monitor EKG intensif)
+export const IntensiveCareIcu = createIcon('IntensiveCareIcu', (
+  <>
+    <rect x="10" y="3" width="11" height="7" rx="1.5" />
+    <path d="M12 6.5h1.5l1-1.8 1.2 3.6 1-1.8H19" />
+    <path d="M3 11v10" />
+    <path d="M3 16h18v5" />
+    <path d="M3 13.5h15a3 3 0 0 1 3 2.5" />
+    <circle cx="6.5" cy="11.5" r="1.5" />
+  </>
+));
+
+// One Day Care / Bedah Sehari ODC (Bed pemulihan layanan sehari dengan simbol matahari tanpa menginap)
+export const OneDayCareOdc = createIcon('OneDayCareOdc', (
+  <>
+    <circle cx="16.5" cy="6.5" r="2.2" />
+    <path d="M16.5 2v1" />
+    <path d="M16.5 10v1" />
+    <path d="M12 6.5h1" />
+    <path d="M20 6.5h1" />
+    <path d="m13.5 3.5.7.7" />
+    <path d="m18.8 8.8.7.7" />
+    <path d="M3 12v9" />
+    <path d="M3 17h18v4" />
+    <path d="M3 14.5h15a3 3 0 0 1 3 2.5" />
+    <circle cx="6.5" cy="12.5" r="1.5" />
+  </>
+));
+
+// Layanan Medical Check-Up / MCU (Papan skrining kesehatan berkala dengan ikon jantung & tanda lolos)
+export const MedicalCheckupMcu = createIcon('MedicalCheckupMcu', (
+  <>
+    <path d="M9 4H6a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3" />
+    <rect x="9" y="2.5" width="6" height="3" rx="1" />
+    <path d="M12 14.5s-3.5-2.1-3.5-4.3a2 2 0 0 1 3.5-1.3A2 2 0 0 1 15.5 10.2c0 2.2-3.5 4.3-3.5 4.3Z" />
+    <path d="M7.5 17.5h4" />
+    <path d="m13.5 17 1 1 2.5-2.5" />
+  </>
+));
+
+// Loket Pendaftaran & Admisi / TPPRJ TPPRI (Meja resepsionis layanan pasien dengan petugas & palang medis)
+export const RegistrationDesk = createIcon('RegistrationDesk', (
+  <>
+    <circle cx="12" cy="6" r="2.5" />
+    <path d="M7.5 13a4.5 4.5 0 0 1 9 0" />
+    <rect x="2" y="13" width="20" height="8" rx="1.5" />
+    <path d="M12 15.5v3" />
+    <path d="M10.5 17h3" />
+  </>
+));
+
+// Instalasi Rekam Medis / RMIK (Lemari arsip berkas rekam medis berlaci dengan palang indeks kesehatan)
+export const MedicalRecordsUnit = createIcon('MedicalRecordsUnit', (
+  <>
+    <rect x="4" y="3" width="16" height="18" rx="2" />
+    <path d="M4 9h16" />
+    <path d="M4 15h16" />
+    <path d="M12 4.8v2.4" />
+    <path d="M10.8 6h2.4" />
+    <path d="M10 12h4" />
+    <path d="M10 18h4" />
+  </>
+));
+
+// Instalasi Farmasi & Loket Obat (Kanopi loket penyerahan resep apotek dengan palang farmasi)
+export const PharmacyServiceCounter = createIcon('PharmacyServiceCounter', (
+  <>
+    <path d="M3 8h18l-1-4H4L3 8Z" />
+    <path d="M4 8v13h16V8" />
+    <path d="M2 21h20" />
+    <path d="M12 11.5v5" />
+    <path d="M9.5 14h5" />
+  </>
+));
+
+// Klinik Kesehatan Ibu & Anak / KIA (Siluet ibu dan anak berdampingan dengan palang layanan kesehatan)
+export const MaternalChildKia = createIcon('MaternalChildKia', (
+  <>
+    <circle cx="8" cy="6.5" r="2.5" />
+    <path d="M4 20v-4a4 4 0 0 1 8 0v4" />
+    <circle cx="16.5" cy="10.5" r="2" />
+    <path d="M13.5 20v-2.5a3 3 0 0 1 6 0V20" />
+    <path d="M16.5 3.5v3" />
+    <path d="M15 5h3" />
+  </>
+));
